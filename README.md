@@ -11,5 +11,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `Element.classList` with the `add(..)` method.
     * `KeyBoardEvent` object. `keydown` event type.
     * `transitionend` event. Fired when a CSS transition has completed.
-    * `HTMLMediaElement.play()`: playback audio.
+    * `HTMLMediaElement.play()`: Audio playback.
 
