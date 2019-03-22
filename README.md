@@ -14,4 +14,4 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `HTMLMediaElement.play()`: Audio playback.
 
   * [Day 2: CSS + JS Clock](https://github.com/nabrus/JavaScript30/tree/master/02-js-css-clock):
-
+    * 
