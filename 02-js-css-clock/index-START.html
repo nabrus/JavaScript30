@@ -66,7 +66,7 @@
       rotates from center of clock face */
       transform: rotate(90deg); /* Positions hands at 12 o'clock */
       transition: all 0.05s;
-      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      transition-timing-function: cubic-bezier(0.1, 2.92, 0.58, 1);
     }
 
   </style>
@@ -74,15 +74,40 @@
   <script>
 
     const secondHand = document.querySelector(".second-hand");
+    const minutesHand = document.querySelector(".min-hand");
+    const hourHand = document.querySelector(".hour-hand");
+    const hands = document.querySelectorAll(".hand");
 
     function setDate() {
       const now = new Date();
+
+      // Seconds Hand
       const seconds = now.getSeconds();
-      const secondsDegrees = ((seconds / 60) * 360);
+      const secondsDegrees = ((seconds / 60) * 360) + 90; 
+      // add 90 to offset default 90deg set for transform property
       secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-      console.log(secondsDegrees);
+      
+      // Minutes Hand
+      const minutes = now.getMinutes();
+      const minutesDegrees = ((minutes / 60) * 360) + 90;
+      minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+      // Hours Hand
+      const hours = now.getHours();
+      const hourDegree = ((hours / 12) * 360) + 90;
+      hourHand.style.transform = `rotate(${hourDegree}deg)`;
+
+      // Conditional to smooth out hands animation when advancing minutes.
+      // else code needed because it resets the inline style by removing
+      // it so the element can revert back to the stylesheet. 
+      if (seconds === 0) {
+        hands.forEach(hand => hand.style.transition = "none");
+      } else {
+        hands.forEach(hand => hand.style.transition = "");
+      }
     }
 
+    // Runs the setDate every second (1000 milliseconds).
     setInterval(setDate, 1000);
 
   </script>
