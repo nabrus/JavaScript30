@@ -31,13 +31,12 @@
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
-    const oldest = inventors.filter(person => person.year < 1600); // My solution
+    const oldest = inventors.filter(person => person.year >= 1500 && person.year < 1600); // My solution
     /* 
       (3) [{…}, {…}, {…}]
         0: {first: "Galileo", last: "Galilei", year: 1564, passed: 1642}
         1: {first: "Johannes", last: "Kepler", year: 1571, passed: 1630}
-        2: {first: "Nicolaus", last: "Copernicus", year: 1473, passed: 1543}
-          length: 3
+          length: 2
     */
 
     // Array.prototype.map()
@@ -81,7 +80,9 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
-    const totalYearsLived = inventors.reduce((acc, currentVal) => acc + currentVal.year);
+    const totalYearsLived = inventors.reduce((acc, currentVal) => {
+       return acc + currentVal.year < currentVal.passed;
+    });
 
     // 5. Sort the inventors by years lived
 
