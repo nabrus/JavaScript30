@@ -66,15 +66,19 @@
 
   <script>
 
+    // CSS variables can be updated for any element as shown below. 
+
     // Selection a NodeList of the inputs
     const inputs = document.querySelectorAll(".controls input");
 
     function handleUpdate() {
-      const suffix = this.dataset;
-      // dataset property provides read/write access to all the
+      const suffix = this.dataset.sizing || ""; // px or nothing (for color), instead of appending undefined.
+      // `dataset` property provides read/write access to all the
       // custom data attributes (data-*) set on the element.
-
-      
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+      // this.name gives the corresponding name set on input. Then it's changed
+      // to the value being changed plus the suffix `px` or nothing—in the case
+      // color. 
     }
 
     inputs.forEach(input => input.addEventListener("change", handleUpdate));
