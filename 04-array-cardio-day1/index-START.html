@@ -31,7 +31,7 @@
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
-    const oldest = inventors.filter(person => person.year < 1600);
+    const oldest = inventors.filter(person => person.year < 1600); // My solution
     /* 
       (3) [{…}, {…}, {…}]
         0: {first: "Galileo", last: "Galilei", year: 1564, passed: 1642}
@@ -42,7 +42,7 @@
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
-    const names = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+    const names = inventors.map(inventor => `${inventor.first} ${inventor.last}`); // My solution
     /* 
       (12) ["Albert Einstein", "Isaac Newton", "Galileo Galilei",
       "Marie Curie", "Johannes Kepler", "Nicolaus Copernicus", "Max Planck",
@@ -52,13 +52,14 @@
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birth date, oldest to youngest
-    const ageSorted = inventors.sort((a, b) => b.year - a.year);
+    const ageSorted = inventors.sort((a, b) => a.year - b.year); // My solution
     /*
       (12) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
-      0: {first: "Katherine", last: "Blodgett", year: 1898,...
-      1: ...and so on... 
+      0: {first: "Nicolaus", last: "Copernicus", year: 1473,...
+      1: {first: "Galileo", last: "Galilei", year: 1564,...
+      ...and so on to the youngest... 
     */
-    
+
     // Use of the `compareFunction`
     /* 
       If compareFunction(a, b) is less than 0, sort a to an index lower than b
@@ -80,6 +81,7 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
+    const totalYearsLived = inventors.reduce((acc, currentVal) => acc + currentVal.year);
 
     // 5. Sort the inventors by years lived
 
@@ -89,10 +91,24 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    const lastNameSort = people.sort(); //??? list already sorted
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+    // My solution
+    const tally = data.reduce((vehicles, vehicle) => {
+      if (vehicle in vehicles) {
+        vehicles[vehicle] += 1;
+      } else {
+        vehicles[vehicle] = 1;
+      }
+      return vehicles;
+    }, {});
+  /*
+    {car: 5, truck: 3, bike: 2, walk: 2, van: 2}
+  */
 
   </script>
 </body>
