@@ -78,6 +78,18 @@
       results are returned then the sort order is undefined.
     */
 
+    // Wes's initial solution
+    const ordered = inventors.sort(function(a, b) {
+      if (a.year > b.year) {
+        return 1;
+      } else {
+        return -1;
+      }
+    });
+
+    // Wes's refactored solution - using a ternary operator
+    const orderedRefactor = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
+
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
     const totalYearsLived = inventors.reduce((acc, currentVal) => {
