@@ -18,3 +18,9 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * CSS properties `transform-origin`, `transition-timing-function: cubic-bezier(0.1, 2.92, 0.58, 1)`
 
   * [Day 3: Playing with CSS Variables and JS](https://github.com/nabrus/JavaScript30/tree/master/03-css-variables):
+    * CSS variables: custom property notation (e.g., `--main-color: black;`). Accessed using the `var()` function (e.g.,`color: var(--main-color);`).
+    * `dataset` property.
+    * Iterating a `NodeList`.
+    * `change` event used for `<input>` element.
+    * `mousemove` event. Used when pointing device is moved while over an element.
+    * `CSSStyleDeclaration.setProperty()` method used to set a new value for the custom properties. `style.setProperty(propertyName, value, priority);`
