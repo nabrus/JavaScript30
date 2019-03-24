@@ -24,3 +24,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `change` event used for `<input>` element.
     * `mousemove` event. Used when pointing device is moved while over an element.
     * `CSSStyleDeclaration.setProperty()` method used to set a new value for the custom properties. `style.setProperty(propertyName, value, priority);`
+
+  *  [Day 4: Array Cardio Day 1](https://github.com/nabrus/JavaScript30/tree/master/04-array-cardio-day1):
