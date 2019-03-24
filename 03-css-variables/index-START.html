@@ -22,6 +22,26 @@
 
   <style>
 
+    /* 
+      Declaring the variables on `:root` (highest level),
+      and setting the default values for the variables. 
+    */
+    :root {
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+
+    img {
+      padding: var(--spacing); /* using the variable */
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .h1 {
+      color: var(--base);
+    }
+
     /*
       misc styles, nothing to do with CSS variables
     */
