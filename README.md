@@ -16,3 +16,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
   * [Day 2: CSS + JS Clock](https://github.com/nabrus/JavaScript30/tree/master/02-js-css-clock):
     * `setInterval()` method. Repeatedly calls a function or executes a code snippet.
     * CSS properties `transform-origin`, `transition-timing-function: cubic-bezier(0.1, 2.92, 0.58, 1)`
+
+  * [Day 3: Playing with CSS Variables and JS](https://github.com/nabrus/JavaScript30/tree/master/03-css-variables):
