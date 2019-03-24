@@ -31,12 +31,52 @@
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+    const oldest = inventors.filter(person => person.year < 1600);
+    /* 
+      (3) [{…}, {…}, {…}]
+        0: {first: "Galileo", last: "Galilei", year: 1564, passed: 1642}
+        1: {first: "Johannes", last: "Kepler", year: 1571, passed: 1630}
+        2: {first: "Nicolaus", last: "Copernicus", year: 1473, passed: 1543}
+          length: 3
+    */
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
+    const names = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+    /* 
+      (12) ["Albert Einstein", "Isaac Newton", "Galileo Galilei",
+      "Marie Curie", "Johannes Kepler", "Nicolaus Copernicus", "Max Planck",
+      "Katherine Blodgett", "Ada Lovelace", "Sarah E. Goode", "Lise Meitner",
+      "Hanna Hammarström"]
+    */
 
     // Array.prototype.sort()
-    // 3. Sort the inventors by birthdate, oldest to youngest
+    // 3. Sort the inventors by birth date, oldest to youngest
+    const ageSorted = inventors.sort((a, b) => b.year - a.year);
+    /*
+      (12) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+      0: {first: "Katherine", last: "Blodgett", year: 1898,...
+      1: ...and so on... 
+    */
+    
+    // Use of the `compareFunction`
+    /* 
+      If compareFunction(a, b) is less than 0, sort a to an index lower than b
+      (i.e. a comes first).
+
+      If compareFunction(a, b) returns 0, leave a and b unchanged with respect
+      to each other, but sorted with respect to all different elements. Note:
+      the ECMAscript standard does not guarantee this behavior, and thus not
+      all browsers (e.g. Mozilla versions dating back to at least 2003) respect
+      this.
+
+      If compareFunction(a, b) is greater than 0, sort b to an index lower than
+      a (i.e. b comes first).
+
+      compareFunction(a, b) must always return the same value when given a
+      specific pair of elements a and b as its two arguments. If inconsistent
+      results are returned then the sort order is undefined.
+    */
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
