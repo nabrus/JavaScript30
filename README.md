@@ -30,3 +30,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `Array.prototype.map()`
     * `Array.prototype.sort()` used with a `compareFunction`.
     * `Array.prototype.reduce()`
+
+  * [Day 5: Flex Panels Image Gallery](https://github.com/nabrus/JavaScript30/tree/master/05-flex-panel-gallery):
