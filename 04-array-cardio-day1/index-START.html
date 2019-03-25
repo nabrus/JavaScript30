@@ -167,6 +167,20 @@
     {car: 5, truck: 3, bike: 2, walk: 2, van: 2}
   */
 
+  // Wes's solution
+
+  const transportation = data.reduce(function(obj, item) {
+    if (!obj[item]) {
+      obj[item] = 0;
+    }
+    obj[item]++;
+    return obj;
+  }, {});
+
+  // So you start with an empty object. Then check to see if the item
+  // exists in it. If not create it. If it does increment it by one. 
+  // Return the object.
+
   </script>
 </body>
 </html>
