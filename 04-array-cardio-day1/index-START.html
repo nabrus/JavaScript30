@@ -100,10 +100,42 @@
     */
 
     // 5. Sort the inventors by years lived
+    const oldestInventor = inventors.sort((a, b) => {
+      const lastInventor = a.passed - a.year;
+      const nextInventor = b.passed - b.year;
+      return lastInventor > nextInventor ? -1 : 1; // Wes's solution
+      // return nextInventor - lastInventor; // This also works
+    });
+    /*
+      (12) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+        0: {first: "Lise", last: "Meitner", year: 1878, passed: 1968}...
+        1: {first: "Max", last: "Planck", year: 1858, passed: 1947}...
+        2: {first: "Isaac", last: "Newton", year: 1643, passed...
+        And so on...
+    */
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
+    const category = document.querySelector(".mw-category")
+    const links = Array.from(category.querySelectorAll("a"));
+    // Note: querySelectorAll can be called against any existing DOM element,
+    // not just the document.
+    // Also `Array.from(...) used to create an array from the returned 
+    // NodeList so `.map(...)` can be used.
+
+    const de = links
+        .map(link => link.textContent)
+        .filter(streetName => streetName.includes("de"));
+
+    /* console.log(de);
+
+      12) ["Boulevard de l'Amiral-Bruix", "Boulevard des Capucines", "Boulevard de la Chapelle", "Boulevard de Clichy", "Boulevard de l'Hôpital", "Boulevard des Italiens", "Boulevard de la Madeleine", "Boulevard de Magenta", "Boulevard de Rochechouart", "Boulevard de Sébastopol", "Boulevard de Strasbourg", "Boulevard de la Zone"]
+        0: "Boulevard de l'Amiral-Bruix"
+        1: "Boulevard des Capucines"
+        2: "Boulevard de la Chapelle"
+        And so on...
+    */
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
