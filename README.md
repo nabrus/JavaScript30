@@ -36,3 +36,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `translateY()` CSS function.
     * `transitionend` event.
     * `Element.classList` `toggle( String [, force] )`
+
+  * [Day 6: Ajax Type Ahead](https://github.com/nabrus/JavaScript30/tree/master/06-type-ahead):
