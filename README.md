@@ -27,8 +27,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 
   *  [Day 4: Array Cardio Day 1](https://github.com/nabrus/JavaScript30/tree/master/04-array-cardio-day1):
     * `Array.prototype.filter()`
-    * `Array.prototype.map()`
-    * `Array.prototype.sort()` used with a `compareFunction`.
-    * `Array.prototype.reduce()`
 
   * [Day 5: Flex Panels Image Gallery](https://github.com/nabrus/JavaScript30/tree/master/05-flex-panel-gallery):
