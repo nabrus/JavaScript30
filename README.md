@@ -32,4 +32,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `Array.prototype.reduce()`
 
   * [Day 5: Flex Panels Image Gallery](https://github.com/nabrus/JavaScript30/tree/master/05-flex-panel-gallery):
+    * Transistions benefit from using a FlexBox layout. 
+    * `translateY()` CSS function.
     * `transitionend` event.
+    * `Element.classList` `toggle( String [, force] )`
