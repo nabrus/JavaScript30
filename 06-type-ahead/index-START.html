@@ -20,6 +20,7 @@ const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb
 
 const cities = [];
 
+// Fetch data from endpoint and push response into `cities` array.
 fetch(endpoint)
  .then(data => data.json())
  .then(data => cities.push(...data));
