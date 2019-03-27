@@ -38,3 +38,9 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `Element.classList` `toggle( String [, force] )`
 
   * [Day 6: Ajax Type Ahead](https://github.com/nabrus/JavaScript30/tree/master/06-type-ahead):
+    * `fetch()` method provides a way to fetch resources asynchronously across the network.
+    * `keyup` event, fired when a key is released.
+    * `change` event, fires for `<input>`, `<select>`, and `<textarea>` elements when an alteration to the element's value is committed by the user.
+    * `new RegExp(pattern[, flags])` The `RegExp` constructor creates a regular expression object for matching text with a pattern.
+    * The `match()` method retrieves the result of matching a string against a regular expression.
+    * The `replace()` method returns a new string with some or all matches of a `pattern` (string or `RegExp`) replaced by a `replacement` (string or a function to be called for each match).
