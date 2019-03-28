@@ -48,5 +48,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
   * [Day 7: Array Cardio Day 2](https://github.com/nabrus/JavaScript30/tree/master/07-array-cardio-day2)
     * `Array.prototype.some()` method tests whether **at least one** element in the array passes the test implemented by the provided function.
     * `Array.prototype.every()` method tests whether **all** elements in the array pass the test implemented by the provided function.
-    * `Array.prototype.find()` method returns the value of the first element in the array that satisfies the provided testing function. Otherwise `undefined` is returned.
-    * `Array.prototype.findIndex()` returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating no element passed the test.
+    * `Array.prototype.find()` method returns the **value** of the **first element** in the array that satisfies the provided testing function. Otherwise `undefined` is returned.
+    * `Array.prototype.findIndex()` returns the **index** of the first element in the array **that satisfies the provided testing function**. Otherwise, it returns -1, indicating no element passed the test.
