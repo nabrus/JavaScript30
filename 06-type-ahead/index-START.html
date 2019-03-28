@@ -22,7 +22,7 @@ const cities = [];
 
 // Fetch data from endpoint and push response into `cities` array.
 fetch(endpoint)
- .then(data => data.json())
+ .then(response => response.json())
  .then(data => cities.push(...data));
 
 function findMatches(wordToMatch, cities) {
