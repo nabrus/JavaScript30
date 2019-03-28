@@ -6,18 +6,18 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 
 ### Index
 
-  * [Day 1: JavaScript Drum Kit](https://github.com/nabrus/JavaScript30/tree/master/01-js-drum-kit):
+  * [Day 1: JavaScript Drum Kit](https://github.com/nabrus/JavaScript30/tree/master/01-js-drum-kit)
     * `data-*` attributes.
     * `Element.classList` with the `add(..)` method.
     * `KeyBoardEvent` object. `keydown` event type.
     * `transitionend` event. Fired when a CSS transition has completed.
     * `HTMLMediaElement.play()`: Audio playback.
 
-  * [Day 2: CSS + JS Clock](https://github.com/nabrus/JavaScript30/tree/master/02-js-css-clock):
+  * [Day 2: CSS + JS Clock](https://github.com/nabrus/JavaScript30/tree/master/02-js-css-clock)
     * `setInterval()` method. Repeatedly calls a function or executes a code snippet.
     * CSS properties `transform-origin`, `transition-timing-function: cubic-bezier(0.1, 2.92, 0.58, 1)`
 
-  * [Day 3: Playing with CSS Variables and JS](https://github.com/nabrus/JavaScript30/tree/master/03-css-variables):
+  * [Day 3: Playing with CSS Variables and JS](https://github.com/nabrus/JavaScript30/tree/master/03-css-variables)
     * CSS variables: custom property notation (e.g., `--main-color: black;`). Accessed using the `var()` function (e.g.,`color: var(--main-color);`).
     * `dataset` property.
     * Iterating a `NodeList`.
@@ -25,22 +25,28 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `mousemove` event. Used when pointing device is moved while over an element.
     * `CSSStyleDeclaration.setProperty()` method used to set a new value for the custom properties. `style.setProperty(propertyName, value, priority);`
 
-  * [Day 4: Array Cardio Day 1](https://github.com/nabrus/JavaScript30/tree/master/04-array-cardio-day1):
+  * [Day 4: Array Cardio Day 1](https://github.com/nabrus/JavaScript30/tree/master/04-array-cardio-day1)
     * `Array.prototype.filter()`
     * `Array.prototype.map()`
     * `Array.prototype.sort()` used with a `compareFunction`.
     * `Array.prototype.reduce()`
 
-  * [Day 5: Flex Panels Image Gallery](https://github.com/nabrus/JavaScript30/tree/master/05-flex-panel-gallery):
+  * [Day 5: Flex Panels Image Gallery](https://github.com/nabrus/JavaScript30/tree/master/05-flex-panel-gallery)
     * Transistions benefit from using a FlexBox layout. 
     * `translateY()` CSS function.
     * `transitionend` event.
     * `Element.classList` `toggle( String [, force] )`
 
-  * [Day 6: Ajax Type Ahead](https://github.com/nabrus/JavaScript30/tree/master/06-type-ahead):
+  * [Day 6: Ajax Type Ahead](https://github.com/nabrus/JavaScript30/tree/master/06-type-ahead)
     * `fetch()` method provides a way to fetch resources asynchronously across the network.
     * `keyup` event, fired when a key is released.
     * `change` event, fires for `<input>`, `<select>`, and `<textarea>` elements when an alteration to the element's value is committed by the user.
     * `new RegExp(pattern[, flags])` The `RegExp` constructor creates a regular expression object for matching text with a pattern.
     * The `match()` method retrieves the result of matching a string against a regular expression.
     * The `replace()` method returns a new string with some or all matches of a `pattern` (string or `RegExp`) replaced by a `replacement` (string or a function to be called for each match).
+
+  * [Day 7: Array Cardio Day 2](https://github.com/nabrus/JavaScript30/tree/master/07-array-cardio-day2)
+    * `Array.prototype.some()` method tests whether **at least one** element in the array passes the test implemented by the provided function.
+    * `Array.prototype.every()` method tests whether **all** elements in the array pass the test implemented by the provided function.
+    * `Array.prototype.find()` method returns the value of the first element in the array that satisfies the provided testing function. Otherwise `undefined` is returned.
+    * `Array.prototype.findIndex()` returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating no element passed the test.
