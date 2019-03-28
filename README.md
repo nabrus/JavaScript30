@@ -26,10 +26,10 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `CSSStyleDeclaration.setProperty()` method used to set a new value for the custom properties. `style.setProperty(propertyName, value, priority);`
 
   * [Day 4: Array Cardio Day 1](https://github.com/nabrus/JavaScript30/tree/master/04-array-cardio-day1)
-    * `Array.prototype.filter()`
-    * `Array.prototype.map()`
-    * `Array.prototype.sort()` used with a `compareFunction`.
-    * `Array.prototype.reduce()`
+    * `Array.prototype.filter()` method creates a new array with all elements that pass the test implemented by the provided function.
+    * `Array.prototype.map()` method creates a new array with the results of calling a provided function on every element in the calling array.
+    * `Array.prototype.sort()` method sorts the elements of an array in place and returns the array. Used with a `compareFunction` which specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+    * `Array.prototype.reduce()` method executes a **reducer** function (that you provide) on each member of the array resulting in a single output value.
 
   * [Day 5: Flex Panels Image Gallery](https://github.com/nabrus/JavaScript30/tree/master/05-flex-panel-gallery)
     * Transistions benefit from using a FlexBox layout. 
