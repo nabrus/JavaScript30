@@ -18,18 +18,30 @@
     }
 
     // Regular
+    console.log("hello"); // hello
 
-    // Interpolated
+    // Interpolated - using `%s` and the second will be interpolated into it
+    console.log("Hello I am a %s string!", "💩"); // Hello I am a 💩 string!
+    // using backticks 
+    // console.log(`Hello I am ${variable} string!`);
 
-    // Styled
+    // Styled - `%c` in front of what will be styled. Second is the styling
+    console.log("%c I am some great text", "font-size: 50px; background: red; text-shadow: 10px 10px 0 blue");
+    
+    // warning! Gives the stack trace of where it was called
+    console.warn("OH NOOOO"); // ⚠️ OH NOOOO               index-START.html:32
 
-    // warning!
+    // Error :| Display an error and will also give the stack trace
+    console.error("Yikes!!"); // ✗ Yikes!!                 index-START.html:35
 
-    // Error :|
-
-    // Info
+    // Info -  a small "i" icon is displayed next to these items
+    console.info('The sky is dark');
 
     // Testing
+    // .assert() will fire if something is wrong.
+    console.assert(1 === 2, "That is wrong!") // Assertion failed: That is wrong!
+    const p = document.querySelector("p");
+    console.assert(p.classList.contains("ouch"), "No no no, you got that wrong!"); // Assertion failed: No no no, you got that wrong!
 
     // clearing
 
