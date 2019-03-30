@@ -58,7 +58,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * Toggling booleans.
 
   * [Day 9: 14 Must Know Dev Tools Tricks](https://github.com/nabrus/JavaScript30/tree/master/09-dev-tools-domination)
-    * Adding styles to logs by using `%c` as a prefix to what will be styled as first argument. The second argument is the CSS style patterns.
+    * Adding styles to `console.log(..)` by using `%c` as a prefix to what will be styled as first argument. The second argument is the CSS style patterns.
     * `console.warn(..)` Outputs a warning message to the Web Console.
     * `console.error(..)` Outputs an error message to the Web Console.
     * `console.info(..)` Outputs an informational message to the Web Console. In Firefox and Chrome, a small "i" icon is displayed next to these items in the Web Console's log.
