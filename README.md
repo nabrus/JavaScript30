@@ -50,3 +50,22 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `Array.prototype.every()` method tests whether **all** elements in the array pass the test implemented by the provided function.
     * `Array.prototype.find()` method returns the **value** of the **first element** in the array that satisfies the provided testing function. Otherwise `undefined` is returned.
     * `Array.prototype.findIndex()` returns the **index** of the first element in the array **that satisfies the provided testing function**. Otherwise, it returns -1, indicating no element passed the test.
+
+  * [Day 8: Fun with HTML5 Canvas](https://github.com/nabrus/JavaScript30/tree/master/08-fun-with-HTML5-canvas)
+    * Canvas API
+    * `mousemove`, `mousedown`, `mouseup`, and `mouseout` events.
+    * Using event information to draw on the canvas.
+    * Toggling booleans.
+
+  * [Day 9: 14 Must Know Dev Tools Tricks](https://github.com/nabrus/JavaScript30/tree/master/09-dev-tools-domination)
+    * Adding styles to logs by using `%c` as a prefix to what will be styled as first argument. The second argument is the CSS style patterns.
+    * `console.warn(..)` Outputs a warning message to the Web Console.
+    * `console.error(..)` Outputs an error message to the Web Console.
+    * `console.info(..)` Outputs an informational message to the Web Console. In Firefox and Chrome, a small "i" icon is displayed next to these items in the Web Console's log.
+    * `console.assert(..)` Writes an error message to the console if the assertion is false. If the assertion is true, nothing happens.
+    * `console.clear()` Clears the console. The Console's contents will be replaced with an informational message like "Console was cleared".
+    * `console.dir(..)` Displays an interactive list of the properties of the specified JavaScript object. The output is presented as a hierarchical listing with disclosure triangles that let you see the contents of child objects.
+    * `console.group` Creates a new inline group (and `console.groupCollapsed()` creates a collapsed group) in the Web Console log. This indents following console messages by an additional level, until `console.groupEnd()` is called.
+    * `console.count(..)` Logs the number of times that this particular call to count() has been called.
+    * `console.time(..)` Starts a timer you can use to track how long an operation takes.
+    * `console.table(..)` Displays tabular data as a table.
