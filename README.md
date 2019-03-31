@@ -74,3 +74,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `KeyboardEvent.shiftKey` property (read-only) is a `Boolean`.
     * Looping through `NodeList` with `forEach(..)`.
     * Setting a variable for elements in between a criteria and reversing it when met.
+
+  * [Day 11: Custom HTML5 Video Player](https://github.com/nabrus/JavaScript30/tree/master/11-custom-video-player)
