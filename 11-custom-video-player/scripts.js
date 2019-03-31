@@ -8,8 +8,6 @@ function bntToggle(e) {
   console.log(e);
   if (e.target.className === "player__button toggle") {
     player.play();
-  } else {
-    player.pause();
   }
 }
 
