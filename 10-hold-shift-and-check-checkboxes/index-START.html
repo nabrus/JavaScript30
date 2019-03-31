@@ -96,20 +96,55 @@
   </div>
 
 <script>
-
+/*
+  // My attempt
   // Select div that holds the list
   const list = document.querySelector(".inbox");
   const checkBoxes = document.querySelectorAll("input");
 
   function shiftAndCheck(e) {
-    if (e.target.nodeName === "INPUT" && e.shiftKey === true) {
-    console.log(e);
-    e.target.checked = false;
-    }
+    let checked = e;
+    // const node = e.target.nodeName === "INPUT";
+    // if (node && e.shiftKey === true) {
+    // console.log(e);
+    // e.target.checked = false;
+    // }
+    console.log(checked);
   }
 
   // Click event listener
   list.addEventListener("click", shiftAndCheck);
+  */
+
+  // Wes's solution
+  const checkBoxes = document.querySelectorAll('.inbox input[type="checkbox"]')
+
+  let lastChecked;
+
+  function handleCheck(e) {
+    console.log(e);
+    let inBetween = false; // Items that fall in between first/last checked
+    // Check if they have the shift key down AND
+    // that it's being checked
+    if (e.shiftKey && this.checked) {
+      // Now we can loop over every single checkbox
+      checkBoxes.forEach(checkbox => {
+        console.log(checkbox);
+        if (checkbox === this || checkbox === lastChecked) {
+          inBetween = !inBetween;
+          console.log("Starting to check them in between!");
+        }
+
+        if (inBetween) {
+          checkbox.checked = true;
+        }
+      });
+    }
+
+    lastChecked = this; // this = <input type="checkbox">
+  }
+
+  checkBoxes.forEach(checkbox => checkbox.addEventListener("click", handleCheck));
 
 </script>
 </body>
