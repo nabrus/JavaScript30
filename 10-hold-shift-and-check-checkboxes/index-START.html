@@ -97,21 +97,17 @@
 
 <script>
 
-  const list = document.querySelectorAll(".item");
+  // Select div that holds the list
   const checkBoxes = document.querySelector(".inbox");
 
-  function shiftPress(e) {
-    console.log(e.shiftKey);
-  }
-
-  function checkedOff(e) {
-    if (e.target.nodeName === "INPUT") {
+  function shiftAndCheck(e) {
+    if (e.target.nodeName === "INPUT" && e.shiftKey === true) {
     console.log(e);
     }
   }
 
-  list.forEach(node => node.addEventListener("keypress", shiftPress));
-  checkBoxes.addEventListener("click", checkedOff);
+  // Click event listener
+  checkBoxes.addEventListener("click", shiftAndCheck);
 
 </script>
 </body>
