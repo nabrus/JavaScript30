@@ -98,16 +98,18 @@
 <script>
 
   // Select div that holds the list
-  const checkBoxes = document.querySelector(".inbox");
+  const list = document.querySelector(".inbox");
+  const checkBoxes = document.querySelectorAll("input");
 
   function shiftAndCheck(e) {
     if (e.target.nodeName === "INPUT" && e.shiftKey === true) {
     console.log(e);
+    e.target.checked = false;
     }
   }
 
   // Click event listener
-  checkBoxes.addEventListener("click", shiftAndCheck);
+  list.addEventListener("click", shiftAndCheck);
 
 </script>
 </body>
