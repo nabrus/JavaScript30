@@ -69,3 +69,8 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `console.count(..)` Logs the number of times that this particular call to count() has been called.
     * `console.time(..)` Starts a timer you can use to track how long an operation takes.
     * `console.table(..)` Displays tabular data as a table.
+
+  * [Day 10: Hold Shift to Check Multiple Check Boxes](https://github.com/nabrus/JavaScript30/tree/master/10-hold-shift-and-check-checkboxes)
+    * `KeyboardEvent.shiftKey` property (read-only) is a `Boolean`.
+    * Looping through `NodeList` with `forEach(..)`.
+    * Setting a variable for elements in between a criteria and reversing it when met.
