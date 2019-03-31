@@ -1,6 +1,6 @@
 /* Get Elements */
 const player = document.querySelector(".viewer");
-const playBnts = document.querySelectorAll(".player__button");
+const buttons = document.querySelectorAll(".player__button");
 
 
 /* Build out functions */
@@ -12,4 +12,4 @@ function bntToggle(e) {
 }
 
 /* Hook up the event listeners */
-playBnts.forEach(bnt => bnt.addEventListener("click", bntToggle));
+buttons.forEach(bnt => bnt.addEventListener("click", bntToggle));
