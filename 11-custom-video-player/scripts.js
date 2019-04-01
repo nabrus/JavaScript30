@@ -60,14 +60,29 @@ function skip() {
 
 // Slider Controls
 function handleRangeUpdate() {
-  // volume and playbackrate are the two properties that need to be updated
+  // volume and playbackRate are the two properties that need to be updated
   video[this.name] = this.value;
+  // console.log(this.name); // volume or playBackRate
+  // console.log(this.value); // 0 - 2
+}
+
+// Progress Bar
+function handleProgress() {
+  const percent = (video.currentTime / video.duration) * 100;
+  progressBar.style.flexBasis = `${percent}%`;
+}
+
+// Scrubber
+function scrub(e) {
+  const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+  video.currentTime = scrubTime;
 }
 
 /* Hook up the event listeners */
 video.addEventListener("click", togglePlay); // plays vid when viewer is clicked
 video.addEventListener("play", updateButton);
 video.addEventListener("pause", updateButton);
+video.addEventListener("timeupdate", handleProgress);
 
 toggle.addEventListener("click", togglePlay); // plays vid when play bnt clicked
 
@@ -75,3 +90,5 @@ skipButtons.forEach(bnt => bnt.addEventListener("click", skip));
 
 ranges.forEach(slider => slider.addEventListener("change", handleRangeUpdate));
 ranges.forEach(slider => slider.addEventListener("mousemove", handleRangeUpdate));
+
+progress.addEventListener("click", scrub);
