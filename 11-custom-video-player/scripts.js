@@ -53,9 +53,15 @@ function updateButton() {
 
 // Skip buttons
 function skip() {
-  console.log(this.dataset.skip); // 25 or -10
+  // console.log(this.dataset.skip); // 25 or -10
   // Using `parseFloat` to convert the string to a true number
   video.currentTime += parseFloat(this.dataset.skip);
+}
+
+// Slider Controls
+function handleRangeUpdate() {
+  // volume and playbackrate are the two properties that need to be updated
+  video[this.name] = this.value;
 }
 
 /* Hook up the event listeners */
@@ -66,3 +72,6 @@ video.addEventListener("pause", updateButton);
 toggle.addEventListener("click", togglePlay); // plays vid when play bnt clicked
 
 skipButtons.forEach(bnt => bnt.addEventListener("click", skip));
+
+ranges.forEach(slider => slider.addEventListener("change", handleRangeUpdate));
+ranges.forEach(slider => slider.addEventListener("mousemove", handleRangeUpdate));
