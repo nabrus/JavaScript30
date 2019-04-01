@@ -51,9 +51,11 @@ function updateButton() {
   toggle.textContent = icon;
 }
 
-// Skip functions
+// Skip buttons
 function skip() {
-  
+  console.log(this.dataset.skip); // 25 or -10
+  // Using `parseFloat` to convert the string to a true number
+  video.currentTime += parseFloat(this.dataset.skip);
 }
 
 /* Hook up the event listeners */
@@ -62,3 +64,5 @@ video.addEventListener("play", updateButton);
 video.addEventListener("pause", updateButton);
 
 toggle.addEventListener("click", togglePlay); // plays vid when play bnt clicked
+
+skipButtons.forEach(bnt => bnt.addEventListener("click", skip));
