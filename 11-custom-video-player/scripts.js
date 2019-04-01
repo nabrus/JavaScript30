@@ -25,15 +25,40 @@ const skipButtons = player.querySelectorAll("[data-skip]");
 const ranges = player.querySelectorAll(".player__slider");
 
 /* Build out functions */
+// Play button
 function togglePlay() {
   // If video is paused play it or pause it
   // `.paused` property is used because there is no play property
-  return video.paused ? video.play() : video.pause();
+  return video.paused ? video.play() : video.pause(); // My solution
   // Wes's solution
   // const method = video.paused ? 'play' : 'pause';
   // video[method]();
 }
 
+// Separate function instead of adding this functionality to togglePlay().
+// Better to listen for when it's paused on viewer because more things can
+// be added to cause video to pause, ex pop-up window.
+function updateButton() {
+  // My solution
+  // if (!video.paused) {
+  //   toggle.textContent = "││";
+  // } else {
+  //   toggle.textContent = "►";
+  // }
+
+  // Wes's solution
+  const icon = this.paused ? "►" : "││"; // `this` used instead of `video`
+  toggle.textContent = icon;
+}
+
+// Skip functions
+function skip() {
+  
+}
+
 /* Hook up the event listeners */
 video.addEventListener("click", togglePlay); // plays vid when viewer is clicked
+video.addEventListener("play", updateButton);
+video.addEventListener("pause", updateButton);
+
 toggle.addEventListener("click", togglePlay); // plays vid when play bnt clicked
