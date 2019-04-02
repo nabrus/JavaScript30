@@ -1,3 +1,4 @@
+/* eslint no-return-assign: 0 */
 // /* Get Elements */
 // const player = document.querySelector(".viewer");
 // const buttons = document.querySelectorAll(".player__button");
@@ -91,4 +92,11 @@ skipButtons.forEach(bnt => bnt.addEventListener("click", skip));
 ranges.forEach(slider => slider.addEventListener("change", handleRangeUpdate));
 ranges.forEach(slider => slider.addEventListener("mousemove", handleRangeUpdate));
 
+let mousedown = false;
 progress.addEventListener("click", scrub);
+progress.addEventListener("mousemove", e => mousedown && scrub(e));
+// So if `mousedown` is true run the scrub, it won't if false
+// Initial scrub function uses the `e` (event) as arg in function.
+// Need to pass it to this arrow function and then to scrub(..) again.
+progress.addEventListener("mousedown", () => mousedown = true);
+progress.addEventListener("mouseup", () => mousedown = false);
