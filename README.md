@@ -55,7 +55,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * Canvas API
     * `mousemove`, `mousedown`, `mouseup`, and `mouseout` events.
     * Using event information to draw on the canvas.
-    * Toggling booleans.
+    * Setting a "flag" variable. Toggling between `true` and `false` boolean.
 
   * [Day 9: 14 Must Know Dev Tools Tricks](https://github.com/nabrus/JavaScript30/tree/master/09-dev-tools-domination)
     * Adding styles to `console.log(..)` by using `%c` as a prefix to what will be styled as first argument. The second argument is the CSS style patterns.
