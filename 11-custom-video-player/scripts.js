@@ -81,8 +81,23 @@ function scrub(e) {
 }
 
 // Fullscreen button
+// function fsToggle() {
+//   if (!document.fullscreenElement) {
+//     player.requestFullscreen()
+//       .then({})
+//       .catch(err => console.log(err));
+//   } else {
+//     document.exitFullscreen();
+//   }
+// }
+
+// This works too
 function fsToggle() {
-  player.classList.add(":fullscreen");
+  if (!document.fullscreenElement) {
+    player.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
 }
 
 /* Hook up the event listeners */
