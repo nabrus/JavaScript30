@@ -81,24 +81,24 @@ function scrub(e) {
 }
 
 // Fullscreen button
-// function fsToggle() {
-//   if (!document.fullscreenElement) {
-//     player.requestFullscreen()
-//       .then({})
-//       .catch(err => console.log(err));
-//   } else {
-//     document.exitFullscreen();
-//   }
-// }
-
-// This works too
 function fsToggle() {
   if (!document.fullscreenElement) {
-    player.requestFullscreen();
+    player.requestFullscreen()
+      .then({})
+      .catch(err => console.log(err));
   } else {
     document.exitFullscreen();
   }
 }
+
+// This works too
+// function fsToggle() {
+//   if (!document.fullscreenElement) {
+//     player.requestFullscreen();
+//   } else {
+//     document.exitFullscreen();
+//   }
+// }
 
 /* Hook up the event listeners */
 video.addEventListener("click", togglePlay); // plays vid when viewer is clicked
