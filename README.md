@@ -76,3 +76,13 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * Setting a variable for elements in between a criteria and reversing it when met.
 
   * [Day 11: Custom HTML5 Video Player](https://github.com/nabrus/JavaScript30/tree/master/11-custom-video-player)
+    * `HTMLMediaElement.paused` property
+    * `.play()` `.paused()` methods.
+    * `dataset`
+    * `parseFloat` parses its argument, and returns a floating point number.
+    * `flex-basis`
+    * `HTMLMediaElement.currentTime` property gives the current playback time in seconds. Setting this value seeks the media to the new time. 
+    * `HTMLMediaElement.duration` property gives the length of the media in seconds, or zero if no media data is available.
+    * `timeupdate` event is fired when the time indicated by the `currentTime` attribute has been updated.
+    * "flag" variable
+    * `fullscreenElement` attribute
