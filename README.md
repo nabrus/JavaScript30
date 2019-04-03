@@ -91,5 +91,6 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * Listening for `keyup`.
     * Storing `e.key` in an array.
     * Check if array matches the desired sequence. 
+    * `splice()`  method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 
   * [Day 13: Slide In on Scroll](https://github.com/nabrus/JavaScript30/tree/master/13-slide-in-on-scroll) 
