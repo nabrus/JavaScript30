@@ -8,15 +8,36 @@
 
   <script>
     // start with strings, numbers and booleans
+    let age = 100;
+    let age2 = age;
+    console.log(age, age2); // 100 100
+    age = 200; 
+    console.log(age, age2); // 200 100
+
+    let name = "Steve";
+    let name2 = name;
+    console.log(name, name2); // Steve Steve
+    name = "StevenUrban";
+    console.log(name, name2); // StevenUrban Steve 
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
     // and we want to make a copy of it.
+    let team = players;
+
+    console.log(players, team); // ["Wes", "Sarah", "Ryan", "Poppy"]
+                                // ["Wes", "Sarah", "Ryan", "Poppy"]
 
     // You might think we can just do something like this:
+    team[3] = "Wyatt";
+
+    console.log(team, players); // ["Wes", "Sarah", "Ryan", "Wyatt"]
+                                // ["Wes", "Sarah", "Ryan", "Wyatt"]
 
     // however what happens when we update that array?
+    // `team` is just a reference to the original array `players`. 
+    // So the `players` gets updated when `team` is changed.
 
     // now here is the problem!
 
@@ -25,6 +46,10 @@
     // Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
     // So, how do we fix this? We take a copy instead!
+    // Using `slice()` which makes a shallow copy of a portion (or all of
+    // when used without begin or end parameters) of an array into a new
+    // array. The original array will not be modified. 
+    const team2 = players.slice();
 
     // one way
 
