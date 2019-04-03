@@ -90,4 +90,6 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
   * [Day 12: Key Sequence Detection (KONAMI CODE)](https://github.com/nabrus/JavaScript30/tree/master/12-key-sequence-detection)
     * Listening for `keyup`.
     * Storing `e.key` in an array.
-    * Check if array matches the desired sequence.  
+    * Check if array matches the desired sequence. 
+
+  * [Day 13: Slide In on Scroll](https://github.com/nabrus/JavaScript30/tree/master/13-slide-in-on-scroll) 
