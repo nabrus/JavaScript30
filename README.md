@@ -98,3 +98,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `scrollY`
     * `.offsetTop`
     * `innerHeight`
+
+  * [Day 14: Object and Arrays - Reference VS Copy](https://github.com/nabrus/JavaScript30/tree/master/14-js-references-vs-copying)
