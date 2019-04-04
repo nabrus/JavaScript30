@@ -100,3 +100,13 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
     * `innerHeight`
 
   * [Day 14: Object and Arrays - Reference VS Copy](https://github.com/nabrus/JavaScript30/tree/master/14-js-references-vs-copying)
+    * Strings, numbers, null, undefined, and booleans are **copied** when assigning variables to other variables using `=`. 
+    * Variables that are assigned a non-primitive value are given a **reference** to that value. Objects—`Array`, `Object`, and `Function`.
+    * Ways to create shallow copies of arrays:
+      * `array.slice();`
+      * `[].concat(array)`
+      * `[...array];`
+      * `Array.from(array);`
+    * Creating shallow copies of objects:
+      * `Object.assign({}, object, { property: value })`
+      * `{ ...object }`
