@@ -7,7 +7,8 @@
 <body>
 
   <script>
-    // start with strings, numbers and booleans
+
+    /* Start with strings, numbers and booleans (copied values) */
     let age = 100;
     let age2 = age;
     console.log(age, age2); // 100 100
@@ -20,46 +21,69 @@
     name = "StevenUrban";
     console.log(name, name2); // StevenUrban Steve 
 
-    // Let's say we have an array
-    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
+    /* Let's say we have an array */
+    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
     // and we want to make a copy of it.
+
+    // You might think we can just do something like this:
     let team = players;
 
     console.log(players, team); // ["Wes", "Sarah", "Ryan", "Poppy"]
                                 // ["Wes", "Sarah", "Ryan", "Poppy"]
 
-    // You might think we can just do something like this:
-    team[3] = "Wyatt";
 
+    // However what happens when we update that array?
+    team[3] = "Wyatt";
+    // Hint: `team` is just a reference to the original array `players`. 
+    // So the `players` array gets updated when `team` is changed.
+
+    // Now here is the problem!
     console.log(team, players); // ["Wes", "Sarah", "Ryan", "Wyatt"]
                                 // ["Wes", "Sarah", "Ryan", "Wyatt"]
-
-    // however what happens when we update that array?
-    // `team` is just a reference to the original array `players`. 
-    // So the `players` gets updated when `team` is changed.
-
-    // now here is the problem!
-
     // oh no - we have edited the original array too!
 
     // Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
     // So, how do we fix this? We take a copy instead!
-    // Using `slice()` which makes a shallow copy of a portion (or all of
+
+    // One way
+    // Using `slice()` which makes a shallow copy of a portion (or all of it
     // when used without begin or end parameters) of an array into a new
     // array. The original array will not be modified. 
     const team2 = players.slice();
+    console.log(team2); // ["Wes", "Sarah", "Ryan", "Wyatt"]
+    console.log(players); // ["Wes", "Sarah", "Ryan", "Wyatt"]
+    
+    team2[2] = "Mose";
 
-    // one way
+    console.log(team2); // ["Wes", "Sarah", "Mose", "Wyatt"]
+    console.log(players); // ["Wes", "Sarah", "Ryan", "Wyatt"]
 
     // or create a new array and concat the old one in
+    const team3 = [].concat(players);
+    console.log(team3); // ["Wes", "Sarah", "Ryan", "Wyatt"]
 
     // or use the new ES6 Spread
+    const team4 = [...players];
+    console.log(team4); // ["Wes", "Sarah", "Ryan", "Wyatt"]
+
+    // or `Array.from(..)`
+    const team5 = Array.from(players); 
+    console.log(team5); // ["Wes", "Sarah", "Ryan", "Wyatt"]
 
     // now when we update it, the original one isn't changed
+    team3[1] = "R2 D2";
+    team4[0] = "Steve";
+    team5[2] = "The Dude";
 
-    // The same thing goes for objects, let's say we have a person object
+    console.log(team3); // ["Wes", "R2 D2", "Ryan", "Wyatt"]
+    console.log(team4); // ["Steve", "Sarah", "Ryan", "Wyatt"]
+    console.log(team5); // ["Steve", "Sarah", "The Dude", "Wyatt"]
+    console.log(players); // ["Wes", "Sarah", "Ryan", "Wyatt"]
+
+
+    /* The same thing goes for objects, let's say we have a person object */
 
     // with Objects
     const person = {
@@ -67,13 +91,64 @@
       age: 80
     };
 
+    const person2 = {
+      name: 'Wes Bos',
+      age: 80
+    };
+
     // and think we make a copy:
+    const captain = person;
+    captain.number = 99;
+
+    console.log(person); // {name: "Wes Bos", age: 80, number: 99}
+    // captain is a reference to person, not a copy!!
 
     // how do we take a copy instead?
+    const cap2 = Object.assign({}, person2, { number: 99 });
+    console.log(cap2); // {name: "Wes Bos", age: 80, number: 99}
+    console.log(person2); // {name: "Wes Bos", age: 80}
 
-    // We will hopefully soon see the object ...spread
+    // Using `...spread` in object literals
+    // Shallow-cloning (excluding prototype) or merging of objects.
+    const cap3 = { ...person2 };
+    console.log(cap3); // {name: "Wes Bos", age: 80}
 
-    // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+
+    // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it. Thinking about perhaps restructuring your code.
+
+    const steve = {
+      name: "Steve",
+      age: 189,
+      social: {
+        twitter: "@_surban_",
+        facebook: "Red Leader"
+      }
+    }
+
+    console.log(steve); // {name: "Steve", age: 189, social: {…}}
+
+    // A copy
+    const dev = Object.assign({}, steve);
+    console.log(dev); // {name: "Steve", age: 189, social: {…}}
+
+    // Change `name` property on `dev`
+    dev.name = "Steven";
+    console.log(dev); // {name: "Steven", age: 189, social: {…}}
+    console.log(steve); // {name: "Steve", age: 189, social: {…}}
+    // `dev` changes, `steve` remains un-mutated.
+
+    // However...
+    console.log(dev.social); // {twitter: "@_surban_", facebook: "Red Leader"}
+    dev.social.twitter = "@hey_now";
+    console.log(dev.social); // {twitter: "@hey_now", facebook: "Red Leader"}
+    console.log(steve.social); // {twitter: "@hey_now", facebook: "Red Leader"}
+    // Shallow-clone, only one level deep. So both `dev` and `steve` `.social`
+    // get updated.
+
+    // "Poor man's deep clone" (not recommended?)
+    const dev2 = JSON.parse(JSON.stringify(steve));
+    // JSON.stringify(steve) returns a copy as a string.
+    // Then JSON.parse, parses it into an Object.
 
   </script>
 
