@@ -13,9 +13,9 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
   * `transitionend` event. Fired when a CSS transition has completed.
   * `HTMLMediaElement.play()`: Audio playback.
 
-  * [Day 2: CSS + JS Clock](https://github.com/nabrus/JavaScript30/tree/master/02-js-css-clock)
-    * `setInterval()` method. Repeatedly calls a function or executes a code snippet.
-    * CSS properties `transform-origin`, `transition-timing-function: cubic-bezier(0.1, 2.92, 0.58, 1)`
+### [Day 2: CSS + JS Clock](https://github.com/nabrus/JavaScript30/tree/master/02-js-css-clock)
+  * `setInterval()` method. Repeatedly calls a function or executes a code snippet.
+  * CSS properties `transform-origin`, `transition-timing-function: cubic-bezier(0.1, 2.92, 0.58, 1)`
 
   * [Day 3: Playing with CSS Variables and JS](https://github.com/nabrus/JavaScript30/tree/master/03-css-variables)
     * CSS variables: custom property notation (e.g., `--main-color: black;`). Accessed using the `var()` function (e.g.,`color: var(--main-color);`).
