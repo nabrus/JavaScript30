@@ -111,3 +111,5 @@ With a list of highlights.
   * Creating shallow copies of objects:
     * `Object.assign({}, object, { property: value })`
     * `{ ...object }`
+
+#### [Day 15: LocalStorage and Event Delegation](https://github.com/nabrus/JavaScript30/tree/master/15-localStorage)
