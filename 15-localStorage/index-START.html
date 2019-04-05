@@ -29,7 +29,8 @@
 
   const addItems = document.querySelector(".add-items");
   const itemsList = document.querySelector(".plates");
-  // On page load the data (`items`) in `localStorage` is accessed
+  // On page load the data (`items`) in `localStorage` is checked 
+  // if there or falls back to an empty array.
   const items = JSON.parse(localStorage.getItem("items")) || [];
 
   function addItem(e) {
@@ -49,6 +50,7 @@
 
     items.push(item);
     populateList(items, itemsList);
+    // Adding items to localStorage
     localStorage.setItem("items", JSON.stringify(items));
     // `items` changed into a string to show correct value in localStorage
     // Note: in localStorage the keys and values are ALWAYS STRINGS 
@@ -72,12 +74,21 @@
     }).join(""); // Change the array from map to a string since we need HTML
   }
 
-  // Maintaining 
+  // Persist the toggling state of the checkbox in localStorage.
   function toggleDone(e) {
-
+    if (!e.target.matches("input")) return; // Skip this unless it's an input
+    // Now using the index set with `data-index=${index}`
+    const el = e.target;
+    const i = el.dataset.index;
+    items[i].done = !items[i].done;
+    localStorage.setItem("items", JSON.stringify(items));
+    populateList(items, itemsList);
   }
 
   addItems.addEventListener("submit", addItem);
+  itemsList.addEventListener("click", toggleDone);
+  // Using event delegation-listener on the parent <ul> to delegate to 
+  // the child <li>
 
   populateList(items, itemsList);
 
