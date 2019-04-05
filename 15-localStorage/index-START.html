@@ -29,7 +29,7 @@
 
   const addItems = document.querySelector(".add-items");
   const itemsList = document.querySelector(".plates");
-  const items = [];
+  const items = JSON.parse(localStorage.getItem("items")) || [];
 
   function addItem(e) {
     // Prevent the page from re-loading: default behavior of a form. 
@@ -47,7 +47,10 @@
     };
 
     items.push(item);
-    this.reset();
+    populateList(items, itemsList);
+    localStorage.setItem("items", JSON.stringify(items));
+    // `items` changed into a string to show correct value in localStorage
+    this.reset(); // Reset form text field
   }
 
   /*
@@ -57,12 +60,19 @@
     if nothing is passed in. The second is the place to put the HTML.
   */
   function populateList(plates = [], platesList) {
-   platesList.innerHtml =  plates.map((plate, i) => {
-
-    });
+    platesList.innerHTML =  plates.map((plate, index) => {
+      return `
+        <li>
+          <input type="checkbox" data-index=${index} id="item${index}" ${plate.done ? "checked" : ""} />
+          <label for="item${index}">${plate.text}</label>
+        </li>
+      `;
+    }).join(""); // Change the array from map to a string since we need HTML
   }
 
   addItems.addEventListener("submit", addItem);
+
+  populateList(items, itemsList);
 
 </script>
 
