@@ -26,9 +26,41 @@
   </div>
 
 <script>
-  const addItems = document.querySelector('.add-items');
-  const itemsList = document.querySelector('.plates');
+
+  const addItems = document.querySelector(".add-items");
+  const itemsList = document.querySelector(".plates");
   const items = [];
+
+  function addItem(e) {
+    // Prevent the page from re-loading: default behavior of a form. 
+    // It's sending the form, re-loading the page to an external source(server).
+    // But we are working on client side for this.
+    e.preventDefault();
+    // input box
+    // `this` = the form tag `<form class="add-items">...</form>`
+    const text = (this.querySelector("[name=item]")).value; 
+    // Selecting the name attribute of item. Giving you the input. Then getting
+    // the value of what's typed.
+    const item = {
+      text,
+      done: false
+    };
+
+    items.push(item);
+    this.reset();
+  }
+
+  /*
+    Function to create the HTML
+    The two parameters needed are a list of plates, which is the items array.
+    Set an empty array as the default so code won't break when looping over 
+    if nothing is passed in. The second is the place to put the HTML.
+  */
+  function populateList(plates = [], platesList) {
+
+  }
+
+  addItems.addEventListener("submit", addItem);
 
 </script>
 
