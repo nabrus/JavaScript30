@@ -57,7 +57,9 @@
     if nothing is passed in. The second is the place to put the HTML.
   */
   function populateList(plates = [], platesList) {
+   platesList.innerHtml =  plates.map((plate, i) => {
 
+    });
   }
 
   addItems.addEventListener("submit", addItem);
