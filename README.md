@@ -4,7 +4,8 @@
 
 Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 
-### Index
+### Index of Each Day
+With a list of highlights.
 
 #### [Day 1: JavaScript Drum Kit](https://github.com/nabrus/JavaScript30/tree/master/01-js-drum-kit)
   * `data-*` attributes.
