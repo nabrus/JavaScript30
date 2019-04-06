@@ -125,16 +125,15 @@ With a list of highlights.
   * `matches()` method of the `Element` interface returns `true` if the element would be selected by the specified selector string; otherwise, it returns `false`.
   * `HTMLElement.dataset` property provides read/write access to all `data-*` set on the element.
   * Custom checkbox implementation:
-    * Setting the `display` property to `none`:
 ```css
+/* Setting the `display` property to `none` */
 .plates input {
   display: none;
 }
 ```
 
-  * Then changing the `content` property
-
 ```css
+/* Then changing the `content` property */
 .plates input + label:before {
   content: '⬜️';
   margin-right: 10px;
