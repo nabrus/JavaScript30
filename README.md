@@ -132,10 +132,10 @@ With a list of highlights.
 }
 ```
 
-   * Then changing the content property
+  * Then changing the content property
 
 ```css
-  .plates input + label:before {
+.plates input + label:before {
   content: '⬜️';
   margin-right: 10px;
 }
