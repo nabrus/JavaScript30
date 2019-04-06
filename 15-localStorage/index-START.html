@@ -23,6 +23,9 @@
       <input type="text" name="item" placeholder="Item Name" required>
       <input type="submit" value="+ Add Item">
     </form>
+    <button class="clear" type="button">Clear</button>
+    <button class="check-all" type="button">Check All</button>
+    <button class="un-check-all" type="button">Un-Check All</button>
   </div>
 
 <script>
@@ -94,6 +97,9 @@
     localStorage.setItem("items", JSON.stringify(items));
     populateList(items, itemsList);
   }
+
+  // Checkbox button functionality 
+  
 
   addItems.addEventListener("submit", addItem);
   itemsList.addEventListener("click", toggleDone);
