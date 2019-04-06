@@ -109,8 +109,19 @@
     if (e.target.className === "check-all") {
       items.forEach(item => {
         item.done = true;
-        populateList(items, itemsList);
       });
+    // Update localStorage
+    localStorage.setItem("items", JSON.stringify(items));
+    populateList(items, itemsList); // Render list
+    }
+    
+    if (e.target.className === "un-check-all") {
+      items.forEach(item => {
+        item.done = false;
+      });
+    // Update localStorage
+    localStorage.setItem("items", JSON.stringify(items));
+    populateList(items, itemsList); // Render list
     }
   }
   
