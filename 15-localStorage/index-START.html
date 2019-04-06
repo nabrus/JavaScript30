@@ -30,6 +30,7 @@
 
 <script>
 
+  const checkButtons = document.querySelectorAll("button");
   const addItems = document.querySelector(".add-items");
   const itemsList = document.querySelector(".plates");
   // On page load the data (`items`) in `localStorage` is checked 
@@ -98,13 +99,21 @@
     populateList(items, itemsList);
   }
 
-  // Checkbox button functionality 
+  // Checkbox button functionality
+  function checkButton(e) {
+    if (e.target.className === "clear") {
+      localStorage.clear();
+      itemsList.remove();
+    } else if (e.target.className === "check-all")
+  }
   
 
   addItems.addEventListener("submit", addItem);
   itemsList.addEventListener("click", toggleDone);
   // Again, Using event delegation-listener on the parent <ul> to delegate to 
   // the child <input>.
+  
+  checkButtons.forEach(bnt => bnt.addEventListener("click", checkButton));
 
   populateList(items, itemsList);
 
