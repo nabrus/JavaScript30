@@ -131,7 +131,9 @@ With a list of highlights.
   display: none;
 }
 ```
-    * Then changing the content property
+
+   * Then changing the content property
+
 ```css
   .plates input + label:before {
   content: '⬜️';
