@@ -99,12 +99,12 @@
     populateList(items, itemsList);
   }
 
-  // Checkbox button functionality
+  // Extra challenge: Add 3 buttons. A Check all, Un-check all, and one
+  // to clear the list.
+  
+  // Button functionality
+  // My solution
   function checkButton(e) {
-    // if (e.target.className === "clear") {
-    //   itemsList.remove();
-    //   localStorage.clear();
-    // }
     
     if (e.target.className === "check-all") {
       items.forEach(item => {
@@ -118,12 +118,19 @@
       });
     }
 
-    // Update localStorage
+    // Update localStorage-persist state of checked
     localStorage.setItem("items", JSON.stringify(items));
-    populateList(items, itemsList); // Render list
-  }
-  
 
+    // Clearing list and localStorage
+    if (e.target.className === "clear") {
+      itemsList.remove();
+      localStorage.clear();
+      location.reload();
+    }
+
+    populateList(items, itemsList); // Render list
+  } 
+  
   addItems.addEventListener("submit", addItem);
   itemsList.addEventListener("click", toggleDone);
   // Again, Using event delegation-listener on the parent <ul> to delegate to 
