@@ -104,7 +104,14 @@
     if (e.target.className === "clear") {
       localStorage.clear();
       itemsList.remove();
-    } else if (e.target.className === "check-all")
+    }
+    
+    if (e.target.className === "check-all") {
+      items.forEach(item => {
+        item.done = true;
+        populateList(items, itemsList);
+      });
+    }
   }
   
 
