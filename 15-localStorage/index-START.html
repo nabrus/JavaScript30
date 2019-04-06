@@ -112,7 +112,7 @@
       });
     // Update localStorage
     localStorage.setItem("items", JSON.stringify(items));
-    populateList(items, itemsList); // Render list
+    // populateList(items, itemsList); // Render list
     }
     
     if (e.target.className === "un-check-all") {
@@ -121,8 +121,10 @@
       });
     // Update localStorage
     localStorage.setItem("items", JSON.stringify(items));
-    populateList(items, itemsList); // Render list
+    // populateList(items, itemsList); // Render list
     }
+
+    populateList(items, itemsList); // Render list
   }
   
 
