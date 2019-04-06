@@ -113,5 +113,34 @@ With a list of highlights.
     * `{ ...object }`
 
 ### [Day 15: LocalStorage and Event Delegation](https://github.com/nabrus/JavaScript30/tree/master/15-localStorage)
+  * `localStorage` property allows you to access a `Storage` object for the `Document`'s origin; the stored data is saved across browser sessions.
+  * `localStorage.setItem(..)` adds a data item.
+  * `localStorage.getItem(..)` reads a data item.
+  * `localStorage.removeItem(..)` removes a data item.
+  * `localStorage.clear()` removes all `localStorage` items.
+  * Event Delegation — this concept relies on the fact that if you want some code to run when you click on any one of a large number of child elements, you can set the event listener on their parent and have events that happen on them bubble up to their parent, rather than having to set the event listener on every child individually.
+  * `submit` event fires when a `<form>` is submitted.
+  * `Event.preventDefault()` method tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
+  * `HTMLFormElement.reset()` method restores a form element's default values.
+  * `matches()` method of the `Element` interface returns `true` if the element would be selected by the specified selector string; otherwise, it returns `false`.
+  * `HTMLElement.dataset` property provides read/write access to all `data-*` set on the element.
+  * Custom checkbox implementation:
+    * Setting the display property to none:
+```css
+  .plates input {
+  display: none;
+}
+```
+    * Then changing the content property
+```css
+  .plates input + label:before {
+  content: '⬜️';
+  margin-right: 10px;
+}
+
+.plates input:checked + label:before {
+  content: '🌮';
+}
+```
 
 ### [Day 16: CSS Text Shadow Mouse Move Effect](https://github.com/nabrus/JavaScript30/tree/master/16-mouse-move-shadow)
