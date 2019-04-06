@@ -101,29 +101,25 @@
 
   // Checkbox button functionality
   function checkButton(e) {
-    if (e.target.className === "clear") {
-      localStorage.clear();
-      itemsList.remove();
-    }
+    // if (e.target.className === "clear") {
+    //   itemsList.remove();
+    //   localStorage.clear();
+    // }
     
     if (e.target.className === "check-all") {
       items.forEach(item => {
         item.done = true;
       });
-    // Update localStorage
-    localStorage.setItem("items", JSON.stringify(items));
-    // populateList(items, itemsList); // Render list
     }
     
     if (e.target.className === "un-check-all") {
       items.forEach(item => {
         item.done = false;
       });
-    // Update localStorage
-    localStorage.setItem("items", JSON.stringify(items));
-    // populateList(items, itemsList); // Render list
     }
 
+    // Update localStorage
+    localStorage.setItem("items", JSON.stringify(items));
     populateList(items, itemsList); // Render list
   }
   
