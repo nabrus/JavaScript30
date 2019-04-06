@@ -105,13 +105,14 @@
   // Button functionality
   // My solution
   function checkButton(e) {
-    
+    // Checking all
     if (e.target.className === "check-all") {
       items.forEach(item => {
         item.done = true;
       });
     }
     
+    // Un-Checking all
     if (e.target.className === "un-check-all") {
       items.forEach(item => {
         item.done = false;
@@ -123,7 +124,6 @@
 
     // Clearing list and localStorage
     if (e.target.className === "clear") {
-      itemsList.remove();
       localStorage.clear();
       location.reload();
     }
