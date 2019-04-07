@@ -145,3 +145,18 @@ With a list of highlights.
 ```
 
 ### [Day 16: CSS Text Shadow Mouse Move Effect](https://github.com/nabrus/JavaScript30/tree/master/16-mouse-move-shadow)
+  * `mousemove` event is fired when a pointing device (usually a mouse) is moved while over an element.
+  * `MouseEvent.offsetX` read-only property that provides the offset in the X coordinate of the mouse pointer between that event and the padding edge of the target node.
+  * `MouseEvent.offsetY` read-only property that provides the offset in the Y coordinate of the mouse pointer between that event and the padding edge of the target node.
+  * Calculating `offsetX` and `offsetY` values for an element when there is a nested element.
+  * Destructuring:
+  ```js
+  const width = hero.offsetWidth;
+  const height = hero.offsetHeight;
+
+  // Can be authored as... 
+
+  const { offsetWidth: width, offsetHeight: height } = hero;
+  ```
+
+### [Day 17: Sorting Band Names without articles](https://github.com/nabrus/JavaScript30/tree/master/17-sort-without-articles)
