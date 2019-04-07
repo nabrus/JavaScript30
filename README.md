@@ -165,3 +165,9 @@ With a list of highlights.
   ```
 
 ### [Day 17: Sorting Band Names without articles](https://github.com/nabrus/JavaScript30/tree/master/17-sort-without-articles)
+  * `String.prototype.replace()` method returns a new string with some or all matches of a `pattern` replaced by a `replacement`. The `pattern` can be a string or a `RegExp`, and the `replacement` can be a string or a function to be called for each match. If `pattern` is a string, only the first occurrence will be replaced.
+  * `String.prototype.trim()` method removes whitespace from both ends of a string.
+  * `Array.prototype.sort()` method sorts the elements of an array in place and returns the array.
+
+### [Day 18: Tally String Times with Reduce](https://github.com/nabrus/JavaScript30/tree/master/18-adding-up-times-with-reduce)
+
