@@ -54,7 +54,10 @@ With a list of highlights.
 
 ### [Day 8: Fun with HTML5 Canvas](https://github.com/nabrus/JavaScript30/tree/master/08-fun-with-HTML5-canvas)
   * Canvas API
-  * `mousemove`, `mousedown`, `mouseup`, and `mouseout` events.
+  * `mousemove` event is fired when a pointing device (usually a mouse) is moved while over an element.
+  * `mousedown` event is fired when a pointing device button is pressed on an element.
+  * `mouseup` event is fired when a pointing device button is released over an element.
+  * `mouseout` event is fired when a pointing device (usually a mouse) is moved off the element that has the listener attached or off one of its children. Note that it is also triggered on the parent when you move onto a child element, since you move out of the visible space of the parent.
   * Using event information to draw on the canvas.
   * Setting a "flag" variable. Toggling between `true` and `false` boolean.
 
@@ -149,6 +152,8 @@ With a list of highlights.
   * `MouseEvent.offsetX` read-only property that provides the offset in the X coordinate of the mouse pointer between that event and the padding edge of the target node.
   * `MouseEvent.offsetY` read-only property that provides the offset in the Y coordinate of the mouse pointer between that event and the padding edge of the target node.
   * Calculating `offsetX` and `offsetY` values for an element when there is a nested element.
+  * `HTMLElement.offsetWidth` read-only property returns the layout width of an element as an integer.
+  * `HTMLElement.offsetHeight` read-only property returns the height of an element, including vertical padding and borders, as an integer.
   * Destructuring:
   ```js
   const width = hero.offsetWidth;
