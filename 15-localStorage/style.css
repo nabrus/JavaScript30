@@ -44,6 +44,11 @@ button {
   border: 1px solid rgba(0,0,0,0.1);
 }
 
+button:hover,
+button:focus {
+  background-color: lightsteelblue;
+}
+
 button:active {
   transform: scale(0.99);
   background-color: grey;
