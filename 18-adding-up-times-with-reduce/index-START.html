@@ -182,6 +182,46 @@
     </li>
   </ul>
 <script>
+
+  /* Getting the videos total time of the above list. */
+
+  const timeNodes = Array.from(document.querySelectorAll("[data-time]"));
+  // Wrapping element selected in `Array.from` to change it from a NodeList
+  // to an array enabling the use of `.map(..)` and `.reduce(..)`.
+
+  const seconds = timeNodes
+    .map(node => node.dataset.time)
+    // Changing returned value into seconds
+    .map(timeCode => {
+      // Splitting into mins and secs as strings, ex ["3" "44"], then chaining
+      // another `.map(..)` on to convert into numbers [3 44] using
+      // `parseFloat()`. Note parseFloat can be directly passed into map which
+      // calls it against every element in the array.
+      const [mins, secs] = timeCode.split(":").map(parseFloat);
+      return (mins * 60) + secs;
+      // Multiply the `mins` value by 60 to get it in seconds then add that to
+      // the `secs` value.
+    })
+    .reduce((total, vidSeconds) => total + vidSeconds); // 17938
+
+    // Converting the seconds variable into hrs:mins:secs
+    let secondsLeft = seconds;
+    // Divide secondsLeft (17938) by secs in an hour.
+    const hours = Math.floor(secondsLeft / 3600); // 4
+
+    // Find the remainder of secondsLeft divided by secs in hour: 17938 % 3600
+    secondsLeft = secondsLeft % 3600; // 3538
+
+    // Divide secondsLeft (3538) by secs in a minute. 
+    const mins = Math.floor(secondsLeft / 60); // 58
+
+    // Find the remainder of secondsLeft divided by secs in min: 3538 % 60
+    secondsLeft = secondsLeft % 60; // 58
+
+    console.log(hours, mins, secondsLeft); // 4 58 58
+
+
+
 </script>
 </body>
 </html>
