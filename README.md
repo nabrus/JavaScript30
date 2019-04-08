@@ -176,3 +176,5 @@ With a list of highlights.
   * `Math.floor()` function returns the largest integer less than or equal to a given number.
   * Remainder (`%`) — The remainder operator returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
 
+### [Day 19: Unreal Webcam Fun](https://github.com/nabrus/JavaScript30/tree/master/19-webcam-fun)
+
