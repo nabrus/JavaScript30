@@ -190,8 +190,9 @@
   // to an array enabling the use of `.map(..)` and `.reduce(..)`.
 
   const seconds = timeNodes
-    .map(node => node.dataset.time) // iterates arr returning a string of mins and secs for each like "3:44".
-    // Changing returned value into seconds
+    .map(node => node.dataset.time) // iterates arr returning strings of mins
+    // and secs for each, ex. "3:44".
+    // Then change returned values into seconds
     .map(timeCode => {
       // Splitting into mins and secs as strings, ex ["3" "44"], then chaining
       // another `.map(..)` on to convert into numbers [3 44] using
