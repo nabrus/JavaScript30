@@ -170,4 +170,9 @@ With a list of highlights.
   * `Array.prototype.sort()` method sorts the elements of an array in place and returns the array.
 
 ### [Day 18: Tally String Times with Reduce](https://github.com/nabrus/JavaScript30/tree/master/18-adding-up-times-with-reduce)
+  * Creating an array directly on selected HTML elements by wrapping it in `Array.from(..)`.
+  * `parseFloat()` function parses an argument and returns a floating point number.
+  * Passing in `parseFloat()` directly as the callback for `map()`. 
+  * `Math.floor()` function returns the largest integer less than or equal to a given number.
+  * Remainder (`%`) — The remainder operator returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
 
