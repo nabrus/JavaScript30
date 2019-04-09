@@ -177,4 +177,7 @@ With a list of highlights.
   * Remainder (`%`) — The remainder operator returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
 
 ### [Day 19: Unreal Webcam Fun](https://github.com/nabrus/JavaScript30/tree/master/19-webcam-fun)
+  * `Window.navigator` read-only property returns a reference to the `Navigator` object, which can be queried for information about the application running the script.
+  * `MediaDevices.getUserMedia()` method prompts the user for permission to use a media input which produces a `MediaStream` with tracks containing the requested types of media. That stream can include, for example, a video track (produced by either a hardware or virtual video source such as a camera, video recording device, screen sharing service, and so forth), an audio track (similarly, produced by a physical or virtual audio source like a microphone, A/D converter, or the like), and possibly other track types. It returns a `Promise` that resolves to a `MediaStream` object. If the user denies permission, or matching media is not available, then the promise is rejected with `NotAllowedError` or `NotFoundError` respectively. Generally, you will access the `MediaDevices` singleton object using `navigator.mediaDevices`.
+  
 
