@@ -69,9 +69,9 @@ list.innerHTML = sortedBands.map(band => {
   `
 }).join("");
 /*
- Note: `.map(..)` returns an array that we are inserting into the HTML wrapped in <li> tags. So the DOM calls the toString() method on it which will be a
- string with commas by default. Using `.join ("")` gives a string without the
- commas.
+ Note: `.map(..)` returns an array that we are inserting into the HTML wrapped in 
+ <li> tags. So the DOM calls the toString() method on it which will be a string with 
+ commas by default. Using `.join ("")` gives a string without the commas.
 */
 
 console.log(sortedBands);
