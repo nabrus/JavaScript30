@@ -179,5 +179,17 @@ With a list of highlights.
 ### [Day 19: Unreal Webcam Fun](https://github.com/nabrus/JavaScript30/tree/master/19-webcam-fun)
   * `Window.navigator` read-only property returns a reference to the `Navigator` object, which can be queried for information about the application running the script.
   * `MediaDevices.getUserMedia()` method prompts the user for permission to use a media input which produces a `MediaStream` with tracks containing the requested types of media. That stream can include, for example, a video track (produced by either a hardware or virtual video source such as a camera, video recording device, screen sharing service, and so forth), an audio track (similarly, produced by a physical or virtual audio source like a microphone, A/D converter, or the like), and possibly other track types. It returns a `Promise` that resolves to a `MediaStream` object. If the user denies permission, or matching media is not available, then the promise is rejected with `NotAllowedError` or `NotFoundError` respectively. Generally, you will access the `MediaDevices` singleton object using `navigator.mediaDevices`.
-  
+  * `HTMLMediaElement.srcObject` property of the `HTMLMediaElement` interface sets or returns the object which serves as the source of the media associated with the `HTMLMediaElement`. The object can be a `MediaStream`, a `MediaSource`, a `Blob`, or a `File` (which inherits from `Blob`).
+  * `setInterval()` method, offered on the `Window` and `Worker` interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call. It returns an interval ID which uniquely identifies the interval, so you can remove it later by calling `clearInterval()`.
+  * `CanvasRenderingContext2D.drawImage()` method of the Canvas 2D API provides different ways to draw an image onto the canvas.
+  * `CanvasRenderingContext2D` method `getImageData()` of the Canvas 2D API returns an `ImageData` object representing the underlying pixel data for a specified portion of the canvas.
+  * `CanvasRenderingContext2D.putImageData()` method of the Canvas 2D API paints data from the given ImageData object onto the canvas.
+  * `HTMLMediaElement.currentTime` property gives the current playback time in seconds. Setting this value seeks the media to the new time.
+  * `HTMLMediaElement: canplay` event is fired when the user agent can play the media, but estimates that not enough data has been loaded to play the media up to its end without having to stop for further buffering of content. 
+  * `HTMLCanvasElement.toDataURL()` method returns a data URI containing a representation of the image in the format specified by the type parameter (defaults to PNG).
+  * **Base64** is a group of similar *binary-to-text encoding* schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation.
+  * `Element.setAttribute()` sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
+  * The `download` instructs browsers to download a URL instead of navigating to it, so the user will be prompted to save it as a local file. If the attribute has a value, it is used as the pre-filled file name in the Save prompt (the user can still change the file name if they want).
+  * `Node.insertBefore()` method inserts a node before the reference node as a child of a specified parent node.
+
 
