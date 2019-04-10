@@ -69,6 +69,7 @@ function takePhoto() {
   strip.insertBefore(link, strip.firstChild);
 }
 
+// Filter functions
 function redEffect(pixels) {
   for (let i = 0; i < pixels.data.length; i += 4) {
     pixels.data[i + 0] = pixels.data[i + 0] + 100; // red
@@ -87,6 +88,7 @@ function rgbSplit(pixels) {
   return pixels;
 }
 
+// Not working ??
 function greenScreen(pixels) {
   const levels = {};
 
