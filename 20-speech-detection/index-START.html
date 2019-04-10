@@ -10,7 +10,38 @@
   </div>
 
 <script>
-  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; // FireFox and Chrome respectively
+
+  // Create a new object instance.
+  const recognition = new SpeechRecognition();
+  recognition.interimResults = true;
+
+  let p = document.createElement("p");
+  const words = document.querySelector(".words");
+  words.appendChild(p);
+
+  recognition.addEventListener("result", e => {
+    const transcript = Array.from(e.results)
+      .map(result => result[0])
+      .map(result => result.transcript)
+      .join("")
+
+      p. textContent = transcript;
+
+      if (e.results[0].isFinal) {
+        p = document.createElement("p");
+        words.appendChild(p);
+      }
+    console.log(transcript);
+    
+    });
+
+    // Listening for the `end` event (when speech recognition service 
+    // disconnects), then starts up again by calling start method. 
+    recognition.addEventListener("end", recognition.start);
+    // SpeechRecognition method starts listening to incoming audio
+    recognition.start();
 
 
 </script>
