@@ -7,8 +7,11 @@ const snap = document.querySelector('.snap');
 function getVideo() {
   navigator.mediaDevices.getUserMedia({ video: true, audio: false })
     .then(localMediaStream => {
-      // video.src = window.URL.createObjectURL(localMediaStream);
-      // Doesn't work, createObjectURL is depreciated in Chrome
+      // video.src = window.URL.createObjectURL(localMediaStream)
+      // Doesn't work, createObjectURL is depreciated.
+      /* Older versions of the Media Source specification required using
+      createObjectURL() to create an object URL then setting src to that URL.
+      Now you can just set srcObject to the MediaStream directly. */
       video.srcObject = localMediaStream;
       video.play();
     })
