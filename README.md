@@ -205,3 +205,5 @@ With a list of highlights, definitions, sample code, etc.
   * `Navigator.geolocation` read-only property returns a `Geolocation` object that gives Web content access to the location of the device. This allows a Web site or app to offer customized results based on the user's location. Again, for security reasons, when a web page tries to access location information, the user is notified and asked to grant permission.
   * The `watchPosition()` method is used to register a handler function that will be called automatically each time the position of the device changes. You can also, optionally, specify an error handling callback function. This method returns a watch ID value that then can be used to unregister the handler by passing it to the `Geolocation.clearWatch()` method.
 
+### [Day 22: Follow Along Links](https://github.com/nabrus/JavaScript30/tree/master/22-follow-along-link-highlighter)
+
