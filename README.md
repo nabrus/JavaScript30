@@ -199,4 +199,9 @@ With a list of highlights, definitions, sample code, etc.
   * `SpeechRecognition.start()` starts the speech recognition service listening to incoming audio with intent to recognize grammars associated with the current `SpeechRecognition`.
   * `end` fired when the speech recognition service has disconnected.
 
+### [Day 21: Geolocation based Speedometer and Compass](https://github.com/nabrus/JavaScript30/tree/master/21-geolocation)
+  * Use of **Xcode** to run a Browsersync localhost through the iPhone simulator.
+  * The **Geolocation API** allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information. This API is published through the `navigator.geolocation` object.
+  * `Navigator.geolocation` read-only property returns a `Geolocation` object that gives Web content access to the location of the device. This allows a Web site or app to offer customized results based on the user's location. Again, for security reasons, when a web page tries to access location information, the user is notified and asked to grant permission.
+  * The `watchPosition()` method is used to register a handler function that will be called automatically each time the position of the device changes. You can also, optionally, specify an error handling callback function. This method returns a watch ID value that then can be used to unregister the handler by passing it to the `Geolocation.clearWatch()` method.
 
