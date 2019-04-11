@@ -193,10 +193,10 @@ With a list of highlights, definitions, sample code, etc.
   * `Node.insertBefore()` method inserts a node before the reference node as a child of a specified parent node.
 
 ### [Day 20: Native Speech Recognition](https://github.com/nabrus/JavaScript30/tree/master/20-speech-detection)
-  * `SpeechRecognition` interface of the Web Speech API is the controller interface for the recognition service; this also handles the SpeechRecognitionEvent sent from the recognition service.
-  * `SpeechRecognition()` constructor creates a new SpeechRecognition object instance. `const myRecognition = new SpeechRecognition();`
+  * `SpeechRecognition` interface of the Web Speech API is the controller interface for the recognition service; this also handles the `SpeechRecognitionEvent` sent from the recognition service.
+  * `SpeechRecognition()` constructor creates a new `SpeechRecognition` object instance. `const myRecognition = new SpeechRecognition();`
   * `SpeechRecognition.interimResults` property controls whether interim results should be returned `true` or `false`. Set to `true` and it gives results as you speak, `false` shows when your done speaking.
-  * `SpeechRecognition.start()` starts the speech recognition service listening to incoming audio with intent to recognize grammars associated with the current SpeechRecognition.
+  * `SpeechRecognition.start()` starts the speech recognition service listening to incoming audio with intent to recognize grammars associated with the current `SpeechRecognition`.
   * `end` fired when the speech recognition service has disconnected.
 
 
