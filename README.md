@@ -207,8 +207,8 @@ With a list of highlights, definitions, sample code, etc.
 
 ### [Day 22: Follow Along Links](https://github.com/nabrus/JavaScript30/tree/master/22-follow-along-link-highlighter)
   * `Element.getBoundingClientRect()` method returns the size of an element and its position relative to the viewport.
-  Example:
-  ```
+  ```js
+  // Output Example
   DOMRect {x: 379.671875, y: 58, width: 133.59375, height: 28, top: 58, …}
     bottom: 86
     height: 28
