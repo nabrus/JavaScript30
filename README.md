@@ -220,3 +220,6 @@ With a list of highlights, definitions, sample code, etc.
     y: 58
     __proto__: DOMRect
   ```
+  * Using the returned `DOMRect` object and applying it's values to inline styles.
+  * `transform` **CSS** property lets you rotate, scale, skew, or translate an element.
+  * `translate()` **CSS** function repositions an element in the horizontal and/or vertical directions. Its result is a `<transform-function>` data type. 
