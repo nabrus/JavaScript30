@@ -206,4 +206,16 @@ With a list of highlights, definitions, sample code, etc.
   * The `watchPosition()` method is used to register a handler function that will be called automatically each time the position of the device changes. You can also, optionally, specify an error handling callback function. This method returns a watch ID value that then can be used to unregister the handler by passing it to the `Geolocation.clearWatch()` method.
 
 ### [Day 22: Follow Along Links](https://github.com/nabrus/JavaScript30/tree/master/22-follow-along-link-highlighter)
-
+  * `Element.getBoundingClientRect()` method returns the size of an element and its position relative to the viewport.
+  ```console
+  DOMRect {x: 379.671875, y: 58, width: 133.59375, height: 28, top: 58, …}
+    bottom: 86
+    height: 28
+    left: 379.671875
+    right: 513.265625
+    top: 58
+    width: 133.59375
+    x: 379.671875
+    y: 58
+    __proto__: DOMRect
+  ```
