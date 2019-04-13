@@ -224,3 +224,15 @@ With a list of highlights, definitions, sample code, etc.
   * `transform` **CSS** property lets you rotate, scale, skew, or translate an element.
   * `translate()` **CSS** function repositions an element in the horizontal and/or vertical directions. Its result is a `<transform-function>` data type.
   * `mouseenter` event is fired when a pointing device (usually a mouse) is moved over the element that has the listener attached. 
+
+### [Day 23: Speech Synthesis](https://github.com/nabrus/JavaScript30/tree/master/23-speech-synthesis)
+  * The `SpeechSynthesis` interface of the **Web Speech API** is the controller interface for the speech service; this can be used to retrieve information about the synthesis voices available on the device, start and pause speech, and other commands besides.
+  * The `SpeechSynthesisUtterance` interface of the **Web Speech API** represents a speech request. It contains the content the speech service should read and information about how to read it (e.g. language, pitch and volume.)
+  * `Speech​Synthesis​.speak()` adds an *utterance* to the utterance queue; it will be spoken when any other utterances queued before it have been spoken.
+  * The `voiceschanged` event of the **Web Speech API** is fired when the list of `SpeechSynthesisVoice` objects that would be returned by the `SpeechSynthesis.getVoices()` method has changed (when the `voiceschanged` event fires.)
+  * `Speech​Synthesis​.get​Voices()` method returns a list of `SpeechSynthesisVoice` objects representing all the available voices on the current device.
+  * The **HTML `<option>` element** is used to define an item contained in a `<select>`, an `<optgroup>`, or a `<datalist>` element. As such, `<option>` can represent menu items in popups and other lists of items in an HTML document.
+  * The `change` event is fired for `<input>`, `<select>`, and `<textarea>` elements when an alteration to the element's value is committed by the user. Unlike the `input` event, the `change` event is not necessarily fired for each alteration to an element's `value`.
+  * `Function​.prototype​.bind()` method creates a new function that, when called has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+
+
