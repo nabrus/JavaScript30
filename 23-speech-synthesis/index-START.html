@@ -40,13 +40,21 @@
   // Setting the value in text area as default on page load
   msg.text = document.querySelector("[name=\"text\"]").value;
 
-  // Voices
+  // Populating the dropdown menu with voice options
   function populateVoices() {
     voices = this.getVoices();
-    console.log(voices);
+    voicesDropdown.innerHTML = voices
+      .map(voice => `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`)
+      .join("");
+  }
+
+  // 
+  function setVoice() {
+    console.log("changing voice");
   }
 
   speechSynthesis.addEventListener("voiceschanged", populateVoices);
+  voicesDropdown.addEventListener("change", setVoice);
 
 </script>
 
