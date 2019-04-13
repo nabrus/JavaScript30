@@ -240,4 +240,7 @@ With a list of highlights, definitions, sample code, etc.
   * `HTMLElement.offsetTop` read-only property returns the distance of the current element relative to the top of the `offsetParent` node.
   * `HTMLElement.offsetHeight` read-only property returns the height of an element, including vertical padding and borders, as an integer.
 
+### [Day 25: Event Capture, Propagation, Bubbling and Once](https://github.com/nabrus/JavaScript30/tree/master/25-event-capture%2Cpropagation%2Cbubbling-and-once)
+
+
 
