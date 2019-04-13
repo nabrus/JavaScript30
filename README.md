@@ -235,4 +235,9 @@ With a list of highlights, definitions, sample code, etc.
   * The `change` event is fired for `<input>`, `<select>`, and `<textarea>` elements when an alteration to the element's value is committed by the user. Unlike the `input` event, the `change` event is not necessarily fired for each alteration to an element's `value`.
   * `Function​.prototype​.bind()` method creates a new function that, when called has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
 
+### [Day 24: Sticky Nav](https://github.com/nabrus/JavaScript30/tree/master/24-sticky-nav)
+  * Biggest take-away, adjusting for the extra space left when setting the nav to `position: fixed;` for a smooth scroll without screen jerk.
+  * `HTMLElement.offsetTop` read-only property returns the distance of the current element relative to the top of the `offsetParent` node.
+  * `HTMLElement.offsetHeight` read-only property returns the height of an element, including vertical padding and borders, as an integer.
+
 
