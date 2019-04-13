@@ -44,17 +44,45 @@
   function populateVoices() {
     voices = this.getVoices();
     voicesDropdown.innerHTML = voices
+      .filter(voice => voice.lang.includes("en")) // Filtering language
       .map(voice => `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`)
       .join("");
   }
 
-  // 
+  // Changing to the selected voice
   function setVoice() {
-    console.log("changing voice");
+    // Loops over each voice in the voices array to find the name attribute
+    // thats the same as the one selected in the <option> element. 
+    msg.voice = voices.find(voice => voice.name === this.value);
+    toggle();
   }
+
+  // Restart voice playback on dropdown menu selection change, stopping
+  // current voice.
+  function toggle(startOver = true) { // In case you want to pass in false.
+    speechSynthesis.cancel();
+    if (startOver) {
+      speechSynthesis.speak(msg);
+    }
+  }
+
+  function setOption() {
+    console.log(this.name, this.value);
+    // Setting the value to what was changed.
+    // `this.name` (rate, pitch, or text)
+    // `this.value (a number from slider position  or text from the text field)
+    msg[this.name] = this.value;
+    toggle();
+  }
+
 
   speechSynthesis.addEventListener("voiceschanged", populateVoices);
   voicesDropdown.addEventListener("change", setVoice);
+  options.forEach(option => option.addEventListener("change", setOption));
+  speakButton.addEventListener("click", toggle);
+  stopButton.addEventListener("click", toggle.bind(null, false));
+  // Another way...
+  // stopButton.addEventListener("click", () => toggle(false)); 
 
 </script>
 
