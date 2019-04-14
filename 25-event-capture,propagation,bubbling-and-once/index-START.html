@@ -40,17 +40,26 @@
   }
 </style>
 
-<button></button>
+<button>ONE TIME ONLY</button>
 <script>
 
   const divs = document.querySelectorAll("div");
+  const button = document.querySelector("button");
 
   // Event Bubbling
   function logBubble(e) {
     console.log(this.classList.value);
     /* 
+      When three is clicked
       three
       two
+      one
+
+      When two is clicked
+      two
+      one
+
+      When one is clicked
       one
     */
   }
@@ -59,14 +68,66 @@
   function logCapture(e) {
     console.log(this.classList.value);
     /* 
+      When three is clicked
       one
       two
       three
+
+      When two is clicked
+      one
+      two
+
+      When one is clicked
+      one
     */
   }
 
-  divs.forEach(div => div.addEventListener("click", logBubble));
-  divs.forEach(div => div.addEventListener("click", logCapture, { capture: true }));
+  // `stopPropagation()`
+  function logStopProp(e) {
+    console.log(this.classList.value);
+    e.stopPropagation();
+    /*
+      Will only show which one is clicked, stopping the event from
+      further capturing and bubbling phases.
+
+      For example if three is clicked and `capture: false` is set
+      three
+
+      If two is clicked 
+      two
+
+      But, if three is clicked and `capture: true` is set
+      one
+
+      If two is clicked
+      one
+    */
+  }
+  
+  // `once` = unbinding itself
+  function logOnce(e) {
+    console.log(this.classList.value);
+    /*
+      When clicked will only fire the events once, then will unbind
+      No action taken after clicked again. It's like using `element.removeEventListener()`
+      three
+      two
+      one
+    */
+  }
+
+  /* The different click event behaviors */
+  // divs.forEach(div => div.addEventListener("click", logBubble));
+  // divs.forEach(div => div.addEventListener("click", logCapture, { capture: true }));
+  // divs.forEach(div => div.addEventListener("click", logStopProp, { capture: true }));
+  divs.forEach(div => div.addEventListener("click", logOnce, { once: true }));
+
+  // Running the button only once
+  button.addEventListener("click", () => {
+    console.log("Click!!");
+  }, {
+    once: true
+  })
 
 </script>
 </body>
