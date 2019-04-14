@@ -43,6 +43,31 @@
 <button></button>
 <script>
 
+  const divs = document.querySelectorAll("div");
+
+  // Event Bubbling
+  function logBubble(e) {
+    console.log(this.classList.value);
+    /* 
+      three
+      two
+      one
+    */
+  }
+
+  // Event Capture
+  function logCapture(e) {
+    console.log(this.classList.value);
+    /* 
+      one
+      two
+      three
+    */
+  }
+
+  divs.forEach(div => div.addEventListener("click", logBubble));
+  divs.forEach(div => div.addEventListener("click", logCapture, { capture: true }));
+
 </script>
 </body>
 </html>
