@@ -241,8 +241,8 @@ With a list of highlights, definitions, sample code, etc.
   * `HTMLElement.offsetHeight` read-only property returns the height of an element, including vertical padding and borders, as an integer.
 
 ### [Day 25: Event Capture, Propagation, Bubbling and Once](https://github.com/nabrus/JavaScript30/tree/master/25-event-capture%2Cpropagation%2Cbubbling-and-once)
-  * Event Capture - The browser checks to see if the element has an event handler registered on it, starting at the outer-most element, and runs if it does. It then moves on to the next element inside and so on until it reaches the element that actually fired the event.
-  * Event Bubbling - Is the opposite, the browser starts at the element that hss the event handler registered on it and *bubbles* up. From that initial element it moves to the next immediate ancestor element and so on all the way up. Checking for that event handler on each.  
+  * **Event Capture** - The browser checks to see if the element has an event handler registered on it, starting at the outer-most element, and runs if it does. It then moves on to the next element inside and so on until it reaches the element that actually fired the event.
+  * **Event Bubbling** - Is the opposite, the browser starts at the element that hss the event handler registered on it and *bubbles* up. From that initial element it moves to the next immediate ancestor element and so on all the way up. Checking for that event handler on each.  
 
 
 
