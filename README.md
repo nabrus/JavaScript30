@@ -241,8 +241,11 @@ With a list of highlights, definitions, sample code, etc.
   * `HTMLElement.offsetHeight` read-only property returns the height of an element, including vertical padding and borders, as an integer.
 
 ### [Day 25: Event Capture, Propagation, Bubbling and Once](https://github.com/nabrus/JavaScript30/tree/master/25-event-capture%2Cpropagation%2Cbubbling-and-once)
-  * **Event Capture** - The browser checks to see if the element has an event handler registered on it, starting at the outer-most element, and runs if it does. It then moves on to the next element inside and so on until it reaches the element that actually fired the event.
-  * **Event Bubbling** - Is the opposite, the browser starts at the element that hss the event handler registered on it and *bubbles* up. From that initial element it moves to the next immediate ancestor element and so on all the way up. Checking for that event handler on each.  
+  * **Event Capture** - When an event is fired the browser checks to see if the element's outer-most ancestor has that event. If it does that handler runs. It then moves on to the next element inside, then the next one inside of that and so on *capturing* those events and running those handlers until it reaches the element that actually fired the event. 
+  * **Event Bubbling** - After the browser goes through it's capture phase and the options object `{ capture: false }` is set (the default), it will fire the events in the opposite direction. Starting at the element that has the event handler registered on it and *bubbles* up. From that initial element it moves to the next immediate ancestor element and so on all the way up. Checking for that event handler on each and firing the event if it has it.
+  * `Element.classList` is a read-only property that returns a live `DOMTokenList` collection of the class attributes of the element.
+  * The `stopPropagation()` method of the `Event` interface prevents further propagation of the current event in the capturing and bubbling phases.
+  * `addEventListener()` parameter `once:` A `Boolean` indicating that the `listener` should be invoked at most once after being added. If `true`, the `listener` would be automatically removed when invoked.
 
 
 
