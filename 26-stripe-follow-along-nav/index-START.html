@@ -220,6 +220,34 @@
 </style>
 
 <script>
+
+  const triggers = document.querySelectorAll(".cool > li");
+  const background = document.querySelector(".dropdownBackground");
+  const nav = document.querySelector(".top");
+
+  // Note: `this` is the <li> item
+  function handleEnter() {
+    this.classList.add("trigger-enter");
+    setTimeout(() => this.classList.add("trigger-enter-active"), 150);
+    background.classList.add("open");
+
+    // Selection of this element inside function in order to target
+    // one of the three being hovered over. 
+    const dropdown = this.querySelector(".dropdown");
+    const dropdownCoords = dropdown.getBoundingClientRect();
+    const navCoords = nav.getBoundingClientRect();
+    
+  }
+
+  function handleLeave() {
+    this.classList.remove("trigger-enter", "trigger-enter-active");
+    background.classList.remove("open");
+  }
+
+  triggers.forEach(trigger => trigger.addEventListener("mouseenter", handleEnter));
+  triggers.forEach(trigger => trigger.addEventListener("mouseleave", handleLeave));
+
+
 </script>
 
 </body>
