@@ -247,5 +247,7 @@ With a list of highlights, definitions, sample code, etc.
   * The `stopPropagation()` method of the `Event` interface prevents further propagation of the current event in the capturing and bubbling phases.
   * `addEventListener()` parameter `once:` A `Boolean` indicating that the `listener` should be invoked at most once after being added. If `true`, the `listener` would be automatically removed when invoked.
 
+### [Day 26: Stripe Follow Along Dropdown](https://github.com/nabrus/JavaScript30/tree/master/26-stripe-follow-along-nav)
+
 
 
