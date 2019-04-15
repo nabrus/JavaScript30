@@ -228,15 +228,31 @@
   // Note: `this` is the <li> item
   function handleEnter() {
     this.classList.add("trigger-enter");
-    setTimeout(() => this.classList.add("trigger-enter-active"), 150);
+    // If the `contains("trigger-enter")` is false the second condition won't
+    // run, so it won't add `...-active`. Now moving between dropdowns quickly
+    // won't add the content before background.
+    setTimeout(() => this.classList.contains("trigger-enter") && this.classList.add("trigger-enter-active"), 150);
     background.classList.add("open");
 
-    // Selection of this element inside function in order to target
+    // Selection of `dropdown` inside function in order to target
     // one of the three being hovered over. 
     const dropdown = this.querySelector(".dropdown");
     const dropdownCoords = dropdown.getBoundingClientRect();
     const navCoords = nav.getBoundingClientRect();
-    
+
+    // Combining the two coords
+    const coords = {
+      height: dropdownCoords.height,
+      width: dropdownCoords.width,
+      // Offset the dropdownCoords with the top of the nav. Can't assume
+      // nav will always be anchored to top of page.
+      top: dropdownCoords.top - navCoords.top,
+      left: dropdownCoords.left - navCoords.left,
+    };
+
+    background.style.setProperty("width", `${coords.width}px`);
+    background.style.setProperty("height", `${coords.height}px`);
+    background.style.setProperty("transform", `translate(${coords.left}px, ${coords.top}px)`);
   }
 
   function handleLeave() {
@@ -246,7 +262,6 @@
 
   triggers.forEach(trigger => trigger.addEventListener("mouseenter", handleEnter));
   triggers.forEach(trigger => trigger.addEventListener("mouseleave", handleLeave));
-
 
 </script>
 
