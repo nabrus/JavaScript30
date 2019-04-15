@@ -242,7 +242,7 @@ With a list of highlights, definitions, sample code, etc.
 
 ### [Day 25: Event Capture, Propagation, Bubbling and Once](https://github.com/nabrus/JavaScript30/tree/master/25-event-capture%2Cpropagation%2Cbubbling-and-once)
   * **Event Capture** - When an event is fired the browser checks to see if the element's outer-most ancestor has that event. If it does the handler runs. It then moves on to the next element inside, then the next one inside of that and so on *capturing* those events and running the handler on each until it reaches the element that actually fired the event. 
-  * **Event Bubbling** - After the browser goes through it's capture flow phase and the options object `{ capture: false }` is set (the default), the events  propagate in the opposite direction. Starting at the element that the event fired on if it has the handler registered on it. From there it moves to the next immediate ancestor element and so on *bubbling* all the way up. Checking for and running the event handler.
+  * **Event Bubbling** - After the browser goes through it's capture flow phase and the options object `{ capture: false }` (the default) is set, the events  propagate in the opposite direction. Starting at the element that the event fired on if it has the handler registered on it. From there it moves to the next immediate ancestor element and so on *bubbling* all the way up. Checking for and running the event handler.
   * `Element.classList` is a read-only property that returns a live `DOMTokenList` collection of the class attributes of the element.
   * The `stopPropagation()` method of the `Event` interface prevents further propagation of the current event in the capturing and bubbling phases.
   * `addEventListener()` parameter `once:` A `Boolean` indicating that the `listener` should be invoked at most once after being added. If `true`, the `listener` would be automatically removed when invoked.
@@ -251,7 +251,7 @@ With a list of highlights, definitions, sample code, etc.
   * Using a two stage method to display the hidden elements. First set `display: block;` then `opacity: 1;`. Enables a smooth transition and setting the correct page coordinates. 
   * `mouseenter` event is fired when a pointing device (usually a mouse) is moved over the element that has the listener attached.
   * `mouseleave` event is fired when the pointer of a pointing device (usually a mouse) is moved out of an element that has the listener attached to it.
-  * Using an arrow function `(params) => { statement };` because it doesn't have its own `this`. The value of the enclosing lexical scope is used; arrow functions follow the normal variable lookup rules.
+  * Using an arrow function, `(params) => { statement };`, within a function to take advantage of it not having its own `this`. The value of the enclosing lexical scope is used; arrow functions follow the normal variable lookup rules.
 
 
 
