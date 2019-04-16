@@ -248,10 +248,13 @@ With a list of highlights, definitions, sample code, etc.
   * `addEventListener()` parameter `once:` A `Boolean` indicating that the `listener` should be invoked at most once after being added. If `true`, the `listener` would be automatically removed when invoked.
 
 ### [Day 26: Stripe Follow Along Dropdown](https://github.com/nabrus/JavaScript30/tree/master/26-stripe-follow-along-nav)
-  * Using a two stage method to display the hidden elements. First set `display: block;` then `opacity: 1;`. Enables a smooth transition and setting the correct page coordinates. 
+  * Using a two stage method to display the hidden elements. First set `display: block;` then `opacity: 1;`. Enables a smooth transition and setting the correct page coordinates.
+  * `Element.getBoundingClientRect()` method returns the size of an element and its position relative to the viewport. 
   * `mouseenter` event is fired when a pointing device (usually a mouse) is moved over the element that has the listener attached.
   * `mouseleave` event is fired when the pointer of a pointing device (usually a mouse) is moved out of an element that has the listener attached to it.
   * Using an arrow function, `(params) => { statement };`, within a function to take advantage of it not having its own `this`. The value of the enclosing lexical scope is used; arrow functions follow the normal variable lookup rules.
+
+### [Day 27: Click and Drag to Scroll](https://github.com/nabrus/JavaScript30/tree/master/27-click-and-drag)
 
 
 
