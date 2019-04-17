@@ -269,6 +269,13 @@ With a list of highlights, definitions, sample code, etc.
   * The `Element.scrollLeft` property gets or sets the number of pixels that an element's content is scrolled from its left edge.
 
 ### [Day 28: Video Speed Controller UI](https://github.com/nabrus/JavaScript30/tree/master/28-video-speed-controller)
+  * Calculating the height of the slider bar and attaching the playback rate.
+  * `mousemove` event is fired when a pointing device (usually a mouse) is moved while over an element.
+  * The `pageY` read-only property of the MouseEvent interface returns the Y (vertical) coordinate in pixels of the event relative to the whole document. This property takes into account any vertical scrolling of the page.
+  * `HTMLElement.offsetTop` read-only property returns the distance of the current element relative to the top of the `offsetParent` node.
+  * `Number​.prototype​.toFixed([digits])` method formats a number using fixed-point notation.
+  * `HTMLMediaElement.playbackRate` property sets the rate at which the media is being played back. This is used to implement user controls for fast forward, slow motion, and so forth. The normal playback rate is multiplied by this value to obtain the current rate, so a value of 1.0 indicates normal speed.
+
 
 
 
