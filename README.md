@@ -59,7 +59,8 @@ With a list of highlights, definitions, sample code, etc.
   * `mouseup` event is fired when a pointing device button is released over an element.
   * `mouseout` event is fired when a pointing device (usually a mouse) is moved off the element that has the listener attached or off one of its children. Note that it is also triggered on the parent when you move onto a child element, since you move out of the visible space of the parent.
   * Using event information to draw on the canvas.
-  * Setting a "flag" variable. Toggling between `true` and `false` boolean.
+  * Setting a *flag* variable. Toggling between `true` and `false` boolean.
+    * **flag** variable— it's defined to have one value until some condition is true. Then you change the variable's value. Used to control the flow of a function or statement, allowing to check for certain condition while the function progresses.
 
 ### [Day 9: 14 Must Know Dev Tools Tricks](https://github.com/nabrus/JavaScript30/tree/master/09-dev-tools-domination)
   * Adding styles to `console.log(..)` by using `%c` as a prefix to what will be styled as first argument. The second argument is the CSS style patterns.
@@ -256,6 +257,7 @@ With a list of highlights, definitions, sample code, etc.
 
 ### [Day 27: Click and Drag to Scroll](https://github.com/nabrus/JavaScript30/tree/master/27-click-and-drag)
   * Capturing variables during the `mousedown` event then referencing them later when `mousemove` event is fired.
+  * Using a *flag* variable— it's defined to have one value until some condition is true. Then you change the variable's value. Used to control the flow of a function or statement, allowing to check for certain condition while the function progresses.
   * `mousedown` event is fired when a pointing device button is pressed on an element.
   * `mouseup` event is fired when a pointing device button is released over an element.
   * `mousemove` event is fired when a pointing device (usually a mouse) is moved while over an element.
