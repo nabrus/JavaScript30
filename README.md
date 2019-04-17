@@ -256,5 +256,7 @@ With a list of highlights, definitions, sample code, etc.
 
 ### [Day 27: Click and Drag to Scroll](https://github.com/nabrus/JavaScript30/tree/master/27-click-and-drag)
 
+### [Day 28: Video Speed Controller UI](https://github.com/nabrus/JavaScript30/tree/master/28-video-speed-controller)
+
 
 
