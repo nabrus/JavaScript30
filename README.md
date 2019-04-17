@@ -255,6 +255,16 @@ With a list of highlights, definitions, sample code, etc.
   * Using an arrow function, `(params) => { statement };`, within a function to take advantage of it not having its own `this`. The value of the enclosing lexical scope is used; arrow functions follow the normal variable lookup rules.
 
 ### [Day 27: Click and Drag to Scroll](https://github.com/nabrus/JavaScript30/tree/master/27-click-and-drag)
+  * Capturing variables during the `mousedown` event then referencing them later when `mousemove` event is fired.
+  * `mousedown` event is fired when a pointing device button is pressed on an element.
+  * `mouseup` event is fired when a pointing device button is released over an element.
+  * `mousemove` event is fired when a pointing device (usually a mouse) is moved while over an element.
+  * `mouseleave` event is fired when the pointer of a pointing device (usually a mouse) is moved out of an element that has the listener attached to it.
+  * The `pageX` read-only property of the `MouseEvent` interface returns the X (horizontal) coordinate (in pixels) at which the mouse was clicked, relative to the left edge of the entire document. This includes any portion of the document not currently visible.
+  * `HTMLElement.offsetLeft` read-only property returns the number of pixels that the upper left corner of the current element is offset to the left within the `HTMLElement.offsetParent` node.
+    * `HTMLElement.offsetParent` read-only property returns a reference to the object which is the closest (nearest in the containment hierarchy) positioned containing element. 
+  * `Event​.prevent​Default()` method tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
+  * The `Element.scrollLeft` property gets or sets the number of pixels that an element's content is scrolled from its left edge.
 
 ### [Day 28: Video Speed Controller UI](https://github.com/nabrus/JavaScript30/tree/master/28-video-speed-controller)
 
