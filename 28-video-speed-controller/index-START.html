@@ -15,6 +15,34 @@
   </div>
 
 <script>
+
+  const speed = document.querySelector(".speed");
+  const bar = document.querySelector(".speed-bar");
+  const video = document.querySelector(".flex");
+
+  // Using `function` so `this` is determined by the call = <div class="speed">
+  function handleMove(e) {
+    // Getting the vertical pixel coordinate relative to the whole document
+    // minus the the distance of the element relative to the top of the
+    // offsetParent node.
+    const y = e.pageY - this.offsetTop;
+    // Changing the pixel coordinate into percent
+    const percent = y / this.offsetHeight; // Giving a decimal
+    const min = 0.4;
+    const max = 4;
+    const height = Math.round(percent * 100) + "%"; // Giving 0-100 %
+    // Calculation to offset the height
+    const playbackRate = percent * (max - min) + min;
+    // Add the styling
+    bar.style.height = height;
+    // Change the number inside
+    bar.textContent = playbackRate.toFixed(2) + "x"; // Giving 2 decimal places
+    // Apply playbackRate value to the video.playbackRate property
+    video.playbackRate = playbackRate;
+  };
+
+  speed.addEventListener("mousemove", handleMove);
+
 </script>
 </body>
 </html>
