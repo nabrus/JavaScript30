@@ -276,6 +276,8 @@ With a list of highlights, definitions, sample code, etc.
   * `Number​.prototype​.toFixed([digits])` method formats a number using fixed-point notation.
   * `HTMLMediaElement.playbackRate` property sets the rate at which the media is being played back. This is used to implement user controls for fast forward, slow motion, and so forth. The normal playback rate is multiplied by this value to obtain the current rate, so a value of 1.0 indicates normal speed.
 
+### [Day 29: Countdown Clock](https://github.com/nabrus/JavaScript30/tree/master/29-countdown-timer)
+
 
 
 
