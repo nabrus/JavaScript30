@@ -67,7 +67,7 @@
     // Recalculate position of cursor for every left/right movement.
     const x = e.pageX - slider.offsetLeft;
     // Calculating how far cursor has deviated from it's start coord.
-    const walk = (x - startX) * 3; // Multiply by 3 for greater scroll distance
+    const walk = (x - startX) * 3; // For every pixel, move 3 pixels.
     // Setting scrollLeft prop to the scrollLeft var set minus the walk var.
     slider.scrollLeft = scrollLeft - walk;
   });
