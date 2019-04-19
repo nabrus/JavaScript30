@@ -33,9 +33,63 @@
   </div>
 
 <script>
+
+  /* 
+    Ideas for additions
+    Add a high score board, save to local storage
+    Have different difficulty levels. Slower faster peeping.
+  */
+
   const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
+  let lastHole;
+  let timeUp = false; // 'flag' var
+  let score = 0;
+
+
+  function randomTime(min, max) {
+    return Math.round(Math.random() * (max - min) + min); // offset
+  }
+
+  function randomHole(holes) {
+    const idx = Math.floor(Math.random() * holes.length);
+    const hole = holes[idx];
+    if (hole === lastHole) {
+      return randomHole(holes); // recursion
+    }
+
+    lastHole = hole; // Save a reference to last called for conditional above
+    return hole;
+  }
+
+  function peep() {
+    const time = randomTime(200, 1000);
+    const hole = randomHole(holes);
+    hole.classList.add("up");
+    // Remove the mole after peeping up
+    setTimeout(() => {
+      hole.classList.remove("up");
+      if (!timeUp) peep(); // If timeUp isn't false it will stop calling peep()
+    }, time);
+  }
+
+  function startGame() {
+    score = 0;
+    scoreBoard.textContent = 0;
+    timeUp = false;
+    peep();
+    setTimeout(() => timeUp = true, 10000); // Stop game after 10secs (10000ms)
+  }
+
+  function bonk(e) {
+    if (!e.isTrusted) return; // Fake mouse click, cheater!!
+    score += 1
+    this.classList.remove("up"); // mole retreats after bonking 
+    scoreBoard.textContent = score;
+  }
+
+  moles.forEach(mole => mole.addEventListener("click", bonk));
 
 </script>
 </body>
