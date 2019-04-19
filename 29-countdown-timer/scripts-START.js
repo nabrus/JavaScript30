@@ -57,5 +57,5 @@ document.customForm.addEventListener("submit", function enterTime(e) {
   e.preventDefault();
   const mins = this.minutes.value;
   timer(mins * 60); // Multiply to get seconds
-  this.reset();
+  this.reset(); // Clears out the value.
 });
