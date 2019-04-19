@@ -278,6 +278,8 @@ With a list of highlights, definitions, sample code, etc.
 
 ### [Day 29: Countdown Clock](https://github.com/nabrus/JavaScript30/tree/master/29-countdown-timer)
 
+### [Day 30: Whack A Mole Game](https://github.com/nabrus/JavaScript30/tree/master/30-whack-a-mole)
+
 
 
 
