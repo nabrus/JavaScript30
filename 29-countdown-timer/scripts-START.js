@@ -41,7 +41,7 @@ function displayEndTime(timestamp) {
   const nonMilitary = hour > 12 ? hour - 12 : hour;
   const minutes = end.getMinutes();
 
-  // Hour condtional to fix midnight display as 12 instead of 0
+  // Hour conditional to fix midnight display as 12 instead of 0
   endTime.textContent = `Be Back At ${hour === 0 ? "12" : nonMilitary}:${minutes < 10 ? "0" : ""}${minutes}`;
 }
 
