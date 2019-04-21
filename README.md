@@ -8,8 +8,9 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 With a list of highlights, definitions, sample code, etc.
 
 ### [Day 1: JavaScript Drum Kit](https://github.com/nabrus/JavaScript30/tree/master/01-js-drum-kit)
-  * `data-*` attributes.
-  * `Element.classList` with the `add(..)` method.
+  * The **data-*** global attributes form a class of attributes called **custom data attributes**, that allow proprietary information to be exchanged between the HTML and its DOM representation by scripts.
+  * The `Element.classList` is a read-only property that returns a live `DOMTokenList` collection of the class attributes of the element.
+  *  with the `add(..)` method.
   * `KeyBoardEvent` object. `keydown` event type.
   * `transitionend` event. Fired when a CSS transition has completed.
   * `HTMLMediaElement.play()`: Audio playback.
