@@ -11,7 +11,8 @@ With a list of highlights, definitions, sample code, etc.
   * The **data-*** global attributes form a class of attributes called **custom data attributes**, that allow proprietary information to be exchanged between the HTML and its DOM representation by scripts.
   * The `Element.classList` is a read-only property that returns a live `DOMTokenList` collection of the class attributes of the element.
   *  with the `add(..)` method.
-  * `KeyBoardEvent` object. `keydown` event type.
+  * `KeyboardEvent` objects describe a user interaction with the keyboard; each event describes a single interaction between the user and a key (or combination of a key with modifier keys) on the keyboard. The event type (`keydown`, `keypress`, or `keyup`) identifies what kind of keyboard activity occurred. 
+  * `keydown` event is fired when a key is pressed.
   * `transitionend` event. Fired when a CSS transition has completed.
   * `HTMLMediaElement.play()`: Audio playback.
 
