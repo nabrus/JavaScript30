@@ -83,7 +83,7 @@ With a list of highlights, definitions, sample code, etc.
   * Setting a variable for elements in between a criteria and reversing it when met.
 
 ### [Day 11: Custom HTML5 Video Player](https://github.com/nabrus/JavaScript30/tree/master/11-custom-video-player)
-  * `HTMLMediaElement.paused` property
+  * The read-only `HTMLMediaElement.paused` property tells whether the media element is paused.
   * `.play()` `.paused()` methods.
   * `dataset`
   * `parseFloat` parses its argument, and returns a floating point number.
