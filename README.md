@@ -40,7 +40,7 @@ With a list of highlights, definitions, sample code, etc.
 ### [Day 5: Flex Panels Image Gallery](https://github.com/nabrus/JavaScript30/tree/master/05-flex-panel-gallery)
   * Transistions benefit from using a FlexBox layout. 
   * `translateY()` CSS function.
-  * `transitionend` event.
+  * `transitionend` event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the `transition-property` is removed or `display` is set to `none`, then the event will not be generated.
   * `Element.classList` `toggle( String [, force] )`
 
 ### [Day 6: Ajax Type Ahead](https://github.com/nabrus/JavaScript30/tree/master/06-type-ahead)
