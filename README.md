@@ -25,9 +25,9 @@ With a list of highlights, definitions, sample code, etc.
 
 ### [Day 3: Playing with CSS Variables and JS](https://github.com/nabrus/JavaScript30/tree/master/03-css-variables)
   * CSS variables: custom property notation (e.g., `--main-color: black;`). Accessed using the `var()` function (e.g.,`color: var(--main-color);`).
-  * `dataset` property.
-  * Iterating a `NodeList`.
-  * `change` event used for `<input>` element.
+  * `HTMLElement.dataset` property on the `HTMLElement` interface provides read/write access to all the *custom data attributes* (`data-*`) set on the element. This access is available both in HTML and within the DOM. 
+  * Iterating a `NodeList` — **NodeList** objects are collections of nodes, usually returned by properties such as `Node.childNodes` and methods such as `document.querySelectorAll()`.
+  * `change` event is fired for `<input>`, `<select>`, and `<textarea>` elements when an alteration to the element's value is committed by the user. Unlike the `input` event, the `change` event is not necessarily fired for each alteration to an element's value.
   * `mousemove` event. Used when pointing device is moved while over an element.
   * `CSSStyleDeclaration.setProperty()` method used to set a new value for the custom properties. `style.setProperty(propertyName, value, priority);`
 
