@@ -21,7 +21,7 @@ With a list of highlights, definitions, sample code, etc.
   * CSS properties 
     * `transform-origin` sets the origin for an element's transformations. The transformation origin is the point around which a transformation is applied.
     * `transition-timing-function` sets how intermediate values are calculated for CSS properties being affected by a transition effect.
-  * `cubic-bezier(0.1, 2.92, 0.58, 1)` functional notation defines a cubic Bézier curve. As these curves are continuous, they are often used to smooth down the start and end of the animation and are therefore sometimes called easing functions.
+  * A CSS timing function: `cubic-bezier(0.1, 2.92, 0.58, 1)` functional notation defines a cubic Bézier curve. As these curves are continuous, they are often used to smooth down the start and end of the animation and are therefore sometimes called easing functions.
 
 ### [Day 3: Playing with CSS Variables and JS](https://github.com/nabrus/JavaScript30/tree/master/03-css-variables)
   * CSS variables: custom property notation (e.g., `--main-color: black;`). Accessed using the `var()` function (e.g.,`color: var(--main-color);`).
