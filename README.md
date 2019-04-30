@@ -39,9 +39,10 @@ With a list of highlights, definitions, sample code, etc.
 
 ### [Day 5: Flex Panels Image Gallery](https://github.com/nabrus/JavaScript30/tree/master/05-flex-panel-gallery)
   * Transistions benefit from using a FlexBox layout. 
-  * `translateY()` CSS function.
+  * `translateY()` CSS function repositions an element vertically on the 2D plane. Its result is a `<transform-function>` data type.
   * `transitionend` event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the `transition-property` is removed or `display` is set to `none`, then the event will not be generated.
-  * `Element.classList` `toggle( String [, force] )`
+  * `Element.classList`is a read-only property that returns a live `DOMTokenList` collection of the class attributes of the element.
+  * `toggle( String [, force] )` When only one argument is present: Toggle the class value; i.e., if the class exists then remove it and return `false`, if not, then add it and return `true`. When a second argument is present: If the second argument evaluates to `true`, add the specified class value, and if it evaluates to `false`, remove it.
 
 ### [Day 6: Ajax Type Ahead](https://github.com/nabrus/JavaScript30/tree/master/06-type-ahead)
   * `fetch()` method provides a way to fetch resources asynchronously across the network.
