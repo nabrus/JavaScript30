@@ -10,7 +10,7 @@ With a list of highlights, definitions, sample code, etc.
 ### [Day 1: JavaScript Drum Kit](https://github.com/nabrus/JavaScript30/tree/master/01-js-drum-kit)
   * The **data-*** global attributes form a class of attributes called **custom data attributes**, that allow proprietary information to be exchanged between the HTML and its DOM representation by scripts.
   * The `Element.classList` is a read-only property that returns a live `DOMTokenList` collection of the class attributes of the element.
-  *  with the `add(..)` method.
+  * `Element.classList.add(..)` adds the specified class values. If these classes already exist in the element's class attribute they are ignored.
   * `KeyboardEvent` objects describe a user interaction with the keyboard; each event describes a single interaction between the user and a key (or combination of a key with modifier keys) on the keyboard. The event type (`keydown`, `keypress`, or `keyup`) identifies what kind of keyboard activity occurred. 
   * `keydown` event is fired when a key is pressed.
   * `transitionend` event. Fired when a CSS transition has completed.
