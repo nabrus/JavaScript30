@@ -89,15 +89,16 @@ With a list of highlights, definitions, sample code, etc.
 
 ### [Day 11: Custom HTML5 Video Player](https://github.com/nabrus/JavaScript30/tree/master/11-custom-video-player)
   * The read-only `HTMLMediaElement.paused` property tells whether the media element is paused.
-  * `.play()` `.paused()` methods.
-  * `dataset`
+  * `HTMLMediaElement.play()` method  attempts to begin playback of the media. It returns a `Promise` which is resolved when playback has been successfully started. Failure to begin playback for any reason, such as permission issues, result in the promise being rejected.
+  * The `HTMLMediaElement.pause()` method will pause playback of the media, if the media is already in a paused state this method will have no effect.
+  * The `dataset` property on the `HTMLElement` interface provides read/write access to all the custom data attributes (`data-*`) set on the element. This access is available both in HTML and within the DOM. It is a map of DOMString, one entry for each custom data attribute. Note that the `dataset` property itself can be read, but not directly written. Instead, all writes must be to the individual properties within the `dataset`, which in turn represent the data attributes.
   * `parseFloat` parses its argument, and returns a floating point number.
-  * `flex-basis`
+  * The `flex-basis` CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing.
   * `HTMLMediaElement.currentTime` property gives the current playback time in seconds. Setting this value seeks the media to the new time. 
   * `HTMLMediaElement.duration` property gives the length of the media in seconds, or zero if no media data is available.
   * `timeupdate` event is fired when the time indicated by the `currentTime` attribute has been updated.
-  * "flag" variable
-  * `fullscreenElement` attribute
+  * "flag" variable: it's defined to have one value until some condition is true. Then you change the variable's value. Used to control the flow of a function or statement, allowing to check for certain condition while the function progresses.
+  * The `DocumentOrShadowRoot.fullscreenElement` read-only property returns the `Element` that is currently being presented in full-screen mode in this document, or null if full-screen mode is not currently in use.
 
 ### [Day 12: Key Sequence Detection (KONAMI CODE)](https://github.com/nabrus/JavaScript30/tree/master/12-key-sequence-detection)
   * Listening for `keyup`.
