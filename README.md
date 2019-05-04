@@ -101,10 +101,10 @@ With a list of highlights, definitions, sample code, etc.
   * The `DocumentOrShadowRoot.fullscreenElement` read-only property returns the `Element` that is currently being presented in full-screen mode in this document, or null if full-screen mode is not currently in use.
 
 ### [Day 12: Key Sequence Detection (KONAMI CODE)](https://github.com/nabrus/JavaScript30/tree/master/12-key-sequence-detection)
-  * Listening for `keyup`.
+  * Listening for `keyup` event, fired when a key is released.
   * Storing `e.key` in an array.
   * Check if array matches the desired sequence. 
-  * `splice()`  method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+  * `splice()` method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 
 ### [Day 13: Slide In on Scroll](https://github.com/nabrus/JavaScript30/tree/master/13-slide-in-on-scroll) 
   * Debounce scroll function.
