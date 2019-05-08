@@ -82,7 +82,7 @@ With a list of highlights, definitions, sample code, etc.
   * `console.table(..)` Displays tabular data as a table.
 
 ### [Day 10: Hold Shift to Check Multiple Check Boxes](https://github.com/nabrus/JavaScript30/tree/master/10-hold-shift-and-check-checkboxes)
-  * `KeyboardEvent.shiftKey` property (read-only) is a `Boolean`.
+  * `KeyboardEvent.shiftKey` property (read-only) is a `Boolean` that indicates if the shift key was pressed (true) or not (false) when the event occurred.
   * Looping through `NodeList` with `forEach(..)`.
   * `forEach(..)` method executes a provided function once for each array element.
   * Setting a variable for elements in between a criteria and reversing it when met.
@@ -237,12 +237,12 @@ With a list of highlights, definitions, sample code, etc.
 ### [Day 23: Speech Synthesis](https://github.com/nabrus/JavaScript30/tree/master/23-speech-synthesis)
   * The `SpeechSynthesis` interface of the **Web Speech API** is the controller interface for the speech service; this can be used to retrieve information about the synthesis voices available on the device, start and pause speech, and other commands besides.
   * The `SpeechSynthesisUtterance` interface of the **Web Speech API** represents a speech request. It contains the content the speech service should read and information about how to read it (e.g. language, pitch and volume.)
-  * `Speech​Synthesis​.speak()` adds an *utterance* to the utterance queue; it will be spoken when any other utterances queued before it have been spoken.
+  * `SpeechSynthesis.speak()` adds an *utterance* to the utterance queue; it will be spoken when any other utterances queued before it have been spoken.
   * The `voiceschanged` event of the **Web Speech API** is fired when the list of `SpeechSynthesisVoice` objects that would be returned by the `SpeechSynthesis.getVoices()` method has changed (when the `voiceschanged` event fires.)
-  * `Speech​Synthesis​.get​Voices()` method returns a list of `SpeechSynthesisVoice` objects representing all the available voices on the current device.
+  * `SpeechSynthesis.getVoices()` method returns a list of `SpeechSynthesisVoice` objects representing all the available voices on the current device.
   * The **HTML `<option>` element** is used to define an item contained in a `<select>`, an `<optgroup>`, or a `<datalist>` element. As such, `<option>` can represent menu items in popups and other lists of items in an HTML document.
   * The `change` event is fired for `<input>`, `<select>`, and `<textarea>` elements when an alteration to the element's value is committed by the user. Unlike the `input` event, the `change` event is not necessarily fired for each alteration to an element's `value`.
-  * `Function​.prototype​.bind()` method creates a new function that, when called has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+  * `Function.prototype.bind()` method creates a new function that, when called has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
 
 ### [Day 24: Sticky Nav](https://github.com/nabrus/JavaScript30/tree/master/24-sticky-nav)
   * Biggest take-away, adjusting for the extra space left when setting the nav to `position: fixed;` for a smooth scroll without screen jerk.
@@ -273,7 +273,7 @@ With a list of highlights, definitions, sample code, etc.
   * The `pageX` read-only property of the `MouseEvent` interface returns the X (horizontal) coordinate (in pixels) at which the mouse was clicked, relative to the left edge of the entire document. This includes any portion of the document not currently visible.
   * `HTMLElement.offsetLeft` read-only property returns the number of pixels that the upper left corner of the current element is offset to the left within the `HTMLElement.offsetParent` node.
     * `HTMLElement.offsetParent` read-only property returns a reference to the object which is the closest (nearest in the containment hierarchy) positioned containing element. 
-  * `Event​.prevent​Default()` method tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
+  * `Event.preventDefault()` method tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
   * The `Element.scrollLeft` property gets or sets the number of pixels that an element's content is scrolled from its left edge.
 
 ### [Day 28: Video Speed Controller UI](https://github.com/nabrus/JavaScript30/tree/master/28-video-speed-controller)
@@ -281,7 +281,7 @@ With a list of highlights, definitions, sample code, etc.
   * `mousemove` event is fired when a pointing device (usually a mouse) is moved while over an element.
   * The `pageY` read-only property of the MouseEvent interface returns the Y (vertical) coordinate in pixels of the event relative to the whole document. This property takes into account any vertical scrolling of the page.
   * `HTMLElement.offsetTop` read-only property returns the distance of the current element relative to the top of the `offsetParent` node.
-  * `Number​.prototype​.toFixed([digits])` method formats a number using fixed-point notation.
+  * `Number.prototype.toFixed([digits])` method formats a number using fixed-point notation.
   * `HTMLMediaElement.playbackRate` property sets the rate at which the media is being played back. This is used to implement user controls for fast forward, slow motion, and so forth. The normal playback rate is multiplied by this value to obtain the current rate, so a value of 1.0 indicates normal speed.
 
 ### [Day 29: Countdown Clock](https://github.com/nabrus/JavaScript30/tree/master/29-countdown-timer)
@@ -298,7 +298,7 @@ With a list of highlights, definitions, sample code, etc.
 ### [Day 30: Whack A Mole Game](https://github.com/nabrus/JavaScript30/tree/master/30-whack-a-mole)
   * Using a *flag* variable— it's defined to have one value until some condition is true. Then you change the variable's value. Used to control the flow of a function or statement, allowing to check for certain condition while the function progresses.
   * `setTimeout()` method sets a timer which executes a function or specified piece of code once the timer expires.
-  * `Event​.isTrusted` is a read-only property that is a Boolean which is true when the event was generated by a user action, and false when the event was created or modified by a script or dispatched via `EventTarget.dispatchEvent()`.
+  * `Event.isTrusted` is a read-only property that is a Boolean which is true when the event was generated by a user action, and false when the event was created or modified by a script or dispatched via `EventTarget.dispatchEvent()`.
 
 
 
