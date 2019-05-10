@@ -108,7 +108,7 @@ With a list of highlights, definitions, sample code, etc.
 
 ### [Day 13: Slide In on Scroll](https://github.com/nabrus/JavaScript30/tree/master/13-slide-in-on-scroll) 
   * Debounce scroll function.
-  * `scrollY`
+  * `scrollY` property of the `Window` interface returns the number of pixels that the document is currently scrolled vertically. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number. 
   * `.offsetTop`
   * `innerHeight`
 
