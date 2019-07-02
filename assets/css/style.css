@@ -27,7 +27,38 @@ html {
 ******************************************************************************/
 main {
   display: grid;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas: 
     "sidebar hero"
     "sidebar calendar";
 }
+
+
+
+/*
+ #SIDEBAR
+******************************************************************************/
+.sidebar {
+  grid-area: sidebar;
+}
+
+
+
+/*
+ #HERO
+******************************************************************************/
+.hero {
+  grid-area: hero;
+  min-height: 500px;
+  background: no-repeat center url("https://javascript30.com/images/JS3-social-share.png");
+}
+
+
+
+/*
+ #CALENDAR
+******************************************************************************/
+.calendar {
+  grid-area: calendar;
+}
+
