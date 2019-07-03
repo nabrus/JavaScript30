@@ -45,17 +45,6 @@ main {
 
 
 /*
- #HERO
-******************************************************************************/
-.hero {
-  grid-area: hero;
-  min-height: 500px;
-  background: no-repeat center url("https://javascript30.com/images/JS3-social-share.png");
-}
-
-
-
-/*
  #CALENDAR
 ******************************************************************************/
 .calendar {
