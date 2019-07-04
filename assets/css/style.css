@@ -77,11 +77,18 @@ main {
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  justify-items: end;
 }
 
 .box {
-  font-size: 2rem;
   padding: 0.5rem;
+  border: solid red 2px;
+}
+
+.box h1 {
+  text-align: right;
+}
+
+.day-box__img {
+  width: 100%;
 }
 
