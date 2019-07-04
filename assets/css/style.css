@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 
 
 /*
@@ -86,6 +90,7 @@ main {
 
 .box h1 {
   text-align: right;
+  margin: 0;
 }
 
 .day-box__img {
