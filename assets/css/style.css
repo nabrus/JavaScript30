@@ -28,6 +28,10 @@ img {
   width: 100%;
 }
 
+h1 {
+  color: var(--black);
+}
+
 
 
 /*
@@ -81,15 +85,17 @@ main {
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, minmax(1fr, 200px));
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-flow: dense;
 }
 
 .box {
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   /* border: solid red 2px; */
+  overflow: hidden;
 }
 
-a {
+.day1-box {
   border: solid red 2px;
   background: no-repeat center/200% url(../images/Day1_JS_DrumKit.jpg);
   opacity: 0.5;
@@ -110,4 +116,6 @@ a {
   width: 100%;
   margin: 0;
 }
+
+
 
