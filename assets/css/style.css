@@ -86,13 +86,13 @@ main {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-auto-flow: dense;
 }
 
 .box {
   /* padding: 0.5rem; */
   /* border: solid red 2px; */
   overflow: hidden;
+  
 }
 
 .day1-box {
@@ -108,13 +108,15 @@ main {
 
 .box img {
   max-width: 100%;
-  height: auto;
-  
 }
 
 .day-box__img {
   width: 100%;
   margin: 0;
+}
+
+.day8-box {
+  background: gray;
 }
 
 
