@@ -81,12 +81,18 @@ main {
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, minmax(1fr, 200px));
 }
 
 .box {
   padding: 0.5rem;
+  /* border: solid red 2px; */
+}
+
+a {
   border: solid red 2px;
+  background: no-repeat center/200% url(../images/Day1_JS_DrumKit.jpg);
+  opacity: 0.5;
 }
 
 .box h1 {
@@ -95,8 +101,8 @@ main {
 }
 
 .box img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   
 }
 
