@@ -85,12 +85,12 @@ main {
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 45px repeat(5, 1fr);
 }
 
 .box {
   /* padding: 0.5rem; */
-  /* border: solid red 2px; */
+  border: solid red 2px;
   overflow: hidden;
   
 }
@@ -115,9 +115,13 @@ main {
   margin: 0;
 }
 
-.day8-box {
+.day8-box>a  {
   background: gray;
+  display: grid;
 }
 
-
-
+.week-days {
+  align-self: end;
+  justify-self: end;
+  margin: 0;
+}
