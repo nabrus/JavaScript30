@@ -90,7 +90,7 @@ main {
 
 .box {
   /* padding: 0.5rem; */
-  border: solid red 2px;
+  /* border: solid red 2px; */
   overflow: hidden;
   
 }
@@ -98,12 +98,15 @@ main {
 .day1-box {
   border: solid red 2px;
   background: no-repeat center/200% url(../images/Day1_JS_DrumKit.jpg);
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .box h1 {
+  color: red;
   text-align: right;
   margin: 0;
+  font-size: 3rem;
+  padding: 10px;
 }
 
 .box img {
