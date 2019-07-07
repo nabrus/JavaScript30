@@ -85,7 +85,12 @@ main {
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 200px repeat(5, 1fr);/* original 45px*/
+  grid-template-rows: 250px 45px repeat(5, 1fr);/* original 45px*/
+}
+
+.cal-hero {
+  grid-column: 1 / -1;
+  background: no-repeat center/100% url("https://javascript30.com/images/JS3-social-share.png");
 }
 
 .box {
