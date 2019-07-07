@@ -85,7 +85,7 @@ main {
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 45px repeat(5, 1fr);
+  grid-template-rows: 200px repeat(5, 1fr);/* original 45px*/
 }
 
 .box {
