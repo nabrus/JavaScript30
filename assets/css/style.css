@@ -2,6 +2,7 @@
  #GLOBAL
 ******************************************************************************/
 :root {
+  --yellow: #ffc600;
   --black: #272727;
 }
 
@@ -107,7 +108,7 @@ main {
 }
 
 .box h1 {
-  color: red;
+  color: var(--yellow);
   text-align: right;
   margin: 0;
   font-size: 3rem;
