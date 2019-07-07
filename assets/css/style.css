@@ -26,7 +26,7 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 h1 {
@@ -45,7 +45,7 @@ main {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: 
-  "sidebar calendar"
+  "sidebar cal-hero"
   "sidebar calendar";
 }
 
@@ -76,6 +76,14 @@ main {
 }
 
 
+/*
+ #CAL-HERO
+******************************************************************************/
+.cal-hero {
+  grid-area: cal-hero;
+  overflow: hidden;
+}
+
 
 
 /*
@@ -86,13 +94,10 @@ main {
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 250px 45px repeat(5, 1fr);/* original 45px*/
+  grid-template-rows: 45px repeat(5, 1fr);/* original 45px*/
 }
 
-.cal-hero {
-  grid-column: 1 / -1;
-  background: no-repeat center/100% url("https://javascript30.com/images/JS3-social-share.png");
-}
+
 
 .box {
   /* padding: 0.5rem; */
