@@ -82,6 +82,7 @@ main {
 .cal-hero {
   grid-area: cal-hero;
   overflow: hidden;
+  margin: 0;;
 }
 
 
