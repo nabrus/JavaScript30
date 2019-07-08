@@ -125,16 +125,6 @@ main {
   max-width: 100%;
 }
 
-.day-box__img {
-  width: 100%;
-  margin: 0;
-}
-
-.day8-box>a  {
-  background: gray;
-  display: grid;
-}
-
 .week-days {
   align-self: end;
   justify-self: end;
