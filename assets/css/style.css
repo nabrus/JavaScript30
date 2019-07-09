@@ -45,7 +45,7 @@ main {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: 
-  "sidebar cal-hero"
+  "sidebar calendar"
   "sidebar calendar";
 }
 
@@ -80,10 +80,14 @@ main {
  #CAL-HERO
 ******************************************************************************/
 .cal-hero {
-  grid-area: cal-hero;
-  overflow: hidden;
-  margin: 0;;
+  /* grid-area: cal-hero; */
+  /* background: no-repeat center/120% url("https://javascript30.com/images/JS3-social-share.png"); */
 }
+
+/* .cal-hero img {
+  min-height: 100%;
+} */
+
 
 
 
@@ -91,26 +95,27 @@ main {
 #CALENDAR
 ******************************************************************************/
 .calendar {
+  background: #04010C;
   border: solid black 2px; /* temp */
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 45px repeat(5, 1fr);/* original 45px*/
+  /* grid-template-rows: 1fr 45px repeat(5, 1fr);original 45px */
 }
 
-
-
-.box {
-  /* padding: 0.5rem; */
-  /* border: solid red 2px; */
-  overflow: hidden;
-  
+.calendar img {
+  grid-column: 1 / -1;
+  grid-row: auto;
 }
 
 .day1-box {
-  border: solid red 2px;
+  /* border: solid red 2px; */
   background: no-repeat center/200% url(../images/Day1_JS_DrumKit.jpg);
   /* opacity: 0.5; */
+}
+
+.day2-box {
+  background: no-repeat top/150% url(../images/Day2_JS_Clock.jpg);
 }
 
 .box h1 {
@@ -121,12 +126,15 @@ main {
   padding: 10px;
 }
 
-.box img {
-  max-width: 100%;
-}
-
 .week-days {
-  align-self: end;
+  align-self: center;
   justify-self: end;
   margin: 0;
+  color: #754C6B;
+}
+
+.blank-day {
+  background: #18163B;
+  border-left: solid #04010C 1px;
+  border-right: solid #04010C 1px;
 }
