@@ -30,9 +30,8 @@ img {
 }
 
 h1 {
-  color: var(--black);
+  color: var(--yellow);
 }
-
 
 
 /*
@@ -55,9 +54,15 @@ main {
 #SIDEBAR
 ******************************************************************************/
 .sidebar {
+  color: var(--yellow);
+  background: linear-gradient(45deg, #62343E, #19193F 60%);
   border: solid black 2px; /* temp */
   grid-area: sidebar;
   font-size: 1.8rem;
+}
+
+.sidebar a {
+  color: var(--yellow);
 }
 
 .sidebar-header {
@@ -119,7 +124,6 @@ main {
 }
 
 .box h1 {
-  color: var(--yellow);
   text-align: right;
   margin: 0;
   font-size: 3rem;
@@ -130,7 +134,7 @@ main {
   align-self: center;
   justify-self: end;
   margin: 0;
-  color: #754C6B;
+  color: #62343E;
 }
 
 .blank-day {
