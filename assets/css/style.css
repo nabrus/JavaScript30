@@ -4,6 +4,8 @@
 :root {
   --yellow: #ffc600;
   --black: #272727;
+  --upperSky: #19193F;
+  --lowerSky: #62343E;
 }
 
 
@@ -55,7 +57,7 @@ main {
 ******************************************************************************/
 .sidebar {
   color: white;
-  background: linear-gradient(45deg, #62343E, #19193F 60%);
+  background: linear-gradient(45deg, var(--lowerSky), var(--upperSky) 60%);
   border: solid black 2px; /* temp */
   grid-area: sidebar;
   font-size: 1.8rem;
@@ -106,7 +108,6 @@ main {
 ******************************************************************************/
 .calendar {
   background: #04010C;
-  border: solid black 2px; /* temp */
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -139,11 +140,11 @@ main {
   align-self: center;
   justify-self: end;
   margin: 0;
-  color: #62343E;
+  color: var(--lowerSky);
 }
 
 .blank-day {
-  background: #18163B;
+  background: var(--upperSky);
   border-left: solid #04010C 1px;
   border-right: solid #04010C 1px;
 }
