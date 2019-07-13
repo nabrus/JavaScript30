@@ -17,6 +17,9 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   color: var(--black);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 *, *:before, *:after {
@@ -33,6 +36,7 @@ img {
 
 h1 {
   color: var(--yellow);
+  font-weight: 300;
 }
 
 
@@ -60,7 +64,7 @@ main {
   background: linear-gradient(45deg, var(--lowerSky), var(--upperSky) 60%);
   border: solid black 2px; /* temp */
   grid-area: sidebar;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .sidebar h4 {
