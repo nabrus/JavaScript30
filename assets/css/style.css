@@ -138,6 +138,30 @@ main {
   background: no-repeat top/150% url(../images/Day2_JS_Clock.jpg);
 }
 
+.day3-box {
+  background: no-repeat right/250% url(../images/Day3_CSS_Vars.jpg);
+}
+
+.day4-box {
+  background: no-repeat top/200% url(../images/Day4n7_Array_Cardio_D1-D2.jpg);
+}
+
+.day5-box {
+  background: no-repeat top/180% url(../images/Day5_Flexbox_imgGallery.jpg);
+}
+
+.day6-box {
+  background: no-repeat top/270% url(../images/Day6_AJAX.jpg);
+}
+
+.day7-box {
+  background: no-repeat top/200% url(../images/Day4n7_Array_Cardio_D1-D2.jpg);
+}
+
+.day8-box {
+  background: no-repeat center/160% url(../images/Day8_Canvas.jpg);
+}
+
 .box h1 {
   text-align: right;
   margin: 0;
