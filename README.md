@@ -4,6 +4,8 @@
 
 Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 
+See the finished projects [right here.](https://nabrus.github.io/JavaScript30)
+
 ### Index of Each Day
 With a list of highlights, definitions, sample code, etc.
 
