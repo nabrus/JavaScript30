@@ -26,6 +26,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background: #04010C;
+}
+
 a {
   text-decoration: none;
 }
