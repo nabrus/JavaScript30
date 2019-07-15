@@ -166,6 +166,18 @@ main {
   background: no-repeat center/160% url(../images/Day8_Canvas.jpg);
 }
 
+.day9-box {
+  background: no-repeat bottom/200% url(../images/Day9_Dev_Tool_Tricks.jpg);
+}
+
+.day10-box {
+  background: no-repeat center/280% url(../images/Day10_Hold_Shift_Checkbox.jpg);
+}
+
+.day11-box {
+  background: no-repeat center/280% url(../images/Day11_Custom_HTML5_Vid_Player.jpg);
+}
+
 .box h1 {
   text-align: right;
   margin: 0;
