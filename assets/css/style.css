@@ -147,7 +147,7 @@ main {
 }
 
 .day4-box {
-  background: no-repeat top/200% url(../images/Day4n7_Array_Cardio_D1-D2.jpg);
+  background: no-repeat center/200% url(../images/Day4_Array_Cardio_Day1.jpg);
 }
 
 .day5-box {
@@ -159,7 +159,7 @@ main {
 }
 
 .day7-box {
-  background: no-repeat top/200% url(../images/Day4n7_Array_Cardio_D1-D2.jpg);
+  background: no-repeat center/200% url(../images/Day7_Array_Cardio_Day2.jpg);
 }
 
 .day8-box {
@@ -167,7 +167,7 @@ main {
 }
 
 .day9-box {
-  background: no-repeat bottom/200% url(../images/Day9_Dev_Tool_Tricks.jpg);
+  background: no-repeat center/200% url(../images/Day9_Dev_Tool_Tricks.jpg);
 }
 
 .day10-box {
