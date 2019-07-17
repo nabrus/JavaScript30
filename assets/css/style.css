@@ -178,6 +178,14 @@ main {
   background: no-repeat center/280% url(../images/Day11_Custom_HTML5_Vid_Player.jpg);
 }
 
+.day12-box {
+  background: no-repeat center/260% url(../images/Day12_Key_Detection.jpg);
+}
+
+.day13-box {
+  background: no-repeat center/150% url(../images/Daty13_Slide_in_on_Scroll.jpg);
+}
+
 .box h1 {
   text-align: right;
   margin: 0;
