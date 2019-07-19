@@ -205,3 +205,16 @@ main {
   border-left: solid #04010C 1px;
   border-right: solid #04010C 1px;
 }
+
+@media (max-width: 1082px) {
+  main {
+    grid-template-areas:
+      "sidebar"
+      "sidebar";
+    grid-template-columns: 1fr;
+  }
+
+  .calendar {
+    display: none;
+  }
+}
