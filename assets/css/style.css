@@ -206,6 +206,54 @@ main {
   background: no-repeat center/200% url(../images/Day18_Tally_w_Reduce.jpg);
 }
 
+.day19-box {
+  background: no-repeat center/200% url(../images/Day19_webcam_fun.jpg);
+}
+
+.day20-box {
+  background: no-repeat center/200% url(../images/Day20_Speech_Detection.jpg);
+}
+
+.day21-box {
+  background: no-repeat center/200% url(../images/Day21_geolocation.jpg);
+}
+
+.day22-box {
+  background: no-repeat center/200% url(../images/Day22_follow_along_link_highlighter.jpg);
+}
+
+.day23-box {
+  background: no-repeat center/200% url(../images/Day23_Speech_Synthesis.jpg);
+}
+
+.day24-box {
+  background: no-repeat center/200% url(../images/Day24_sticky_nav.jpg);
+}
+
+.day25-box {
+  background: no-repeat center/200% url(../images/Day25_eCapture_bubbling.jpg);
+}
+
+.day26-box {
+  background: no-repeat center/200% url(../images/Day26_Stripe_nav.jpg);
+}
+
+.day27-box {
+  background: no-repeat center/200% url(../images/Day27_click_and_drag.jpg);
+}
+
+.day28-box {
+  background: no-repeat center/200% url(../images/Day28_vid_speed_controller.jpg);
+}
+
+.day29-box {
+  background: no-repeat center/200% url(../images/Day29_countdown_timer.jpg);
+}
+
+.day30-box {
+  background: no-repeat center/200% url(../images/Day30_whack_a_mole.jpg);
+}
+
 .box h1 {
   text-align: right;
   margin: 0;
