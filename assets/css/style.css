@@ -186,6 +186,26 @@ main {
   background: no-repeat center/150% url(../images/Daty13_Slide_in_on_Scroll.jpg);
 }
 
+.day14-box {
+  background: no-repeat center/260% url(../images/Day14_Ref_vs_Copy.jpg);
+}
+
+.day15-box {
+  background: no-repeat center/200% url(../images/Day15_Localstorage_EventDelegation.jpg);
+}
+
+.day16-box {
+  background: no-repeat center/250% url(../images/Day16_Mouse_Over_Effect.jpg);
+}
+
+.day17-box {
+  background: no-repeat center/200% url(../images/Day17_Sorting_Names.jpg);
+}
+
+.day18-box {
+  background: no-repeat center/200% url(../images/Day18_Tally_w_Reduce.jpg);
+}
+
 .box h1 {
   text-align: right;
   margin: 0;
