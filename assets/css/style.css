@@ -43,6 +43,11 @@ h1 {
   font-weight: 300;
 }
 
+ul {
+  padding-left: 0;
+}
+
+
 
 /*
  #MAIN
@@ -92,19 +97,30 @@ main {
   justify-items: center;
 }
 
+.list-days {
+  list-style: none;
+  margin: 0;
+}
+
 .list-days a {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .list-days img {
   height: 8rem;
-  width: 8rem;;
+  width: 8rem;
+  border-radius: 100%;
+  padding-right: 5px;
 }
 
 .list-days h4 {
-  
+  margin: 0;
+  padding: 10px;
+}
+
+.list-days__img {
+  display: none;
 }
 
 /* .sidebar-list {
@@ -319,4 +335,5 @@ main {
   .calendar {
     display: none;
   }
+
 }
