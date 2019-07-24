@@ -71,22 +71,13 @@ main {
 .sidebar {
   color: white;
   background: linear-gradient(45deg, var(--lowerSky), var(--upperSky) 60%);
-  border: solid black 2px; /* temp */
   grid-area: sidebar;
   font-size: 1.5rem;
+  padding-right: 5px;
 }
 
 .title {
   color: white;
-}
-
-.sidebar h4 {
-  font-size: 2rem;
-  margin: 10px 0 0 0;
-}
-
-.sidebar a {
-  color: var(--yellow);
 }
 
 .sidebar-header {
@@ -97,7 +88,7 @@ main {
   justify-items: center;
 }
 
-.list-days {
+.sidebar-list {
   list-style: none;
   margin: 0;
 }
@@ -107,7 +98,8 @@ main {
   align-items: center;
 }
 
-.list-days h4 {
+.list-days__num {
+  color: var(--yellow);
   margin: 0;
   padding: 10px;
 }
@@ -117,28 +109,14 @@ main {
   height: 8rem;
   width: 8rem;
   border-radius: 100%;
-  /* margin-left: 10px; */
-  margin: 5px 0 5px 10px;
+  margin: 10px 0 10px 10px;
 }
 
-/* .sidebar-list {
-  list-style: none;
+.list-days__title {
+  color: white;
   margin: 0;
-  padding: 0 10px 0 10px;
-  line-height: 3.5rem;
-  
-} */
-
-/* .test {
-  display: flex;
-  
 }
 
-.test img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 100%
-} */
 
 
 
@@ -255,7 +233,7 @@ main {
 }
 
 .day19-box {
-  background: no-repeat top/150% url(../images/Day19_webcam_fun.jpg);
+  background: no-repeat center/180% url(../images/Day19_webcam_fun.jpg);
 }
 
 .day20-box {
@@ -271,7 +249,7 @@ main {
 }
 
 .day23-box {
-  background: no-repeat center/280% url(../images/Day23_Speech_Synthesis.jpg);
+  background: no-repeat bottom/240% url(../images/Day23_Speech_Synthesis.jpg);
 }
 
 .day24-box {
@@ -299,12 +277,12 @@ main {
 }
 
 .day30-box {
-  background: no-repeat right/250% url(../images/Day30_whack_a_mole.jpg);
+  background: no-repeat bottom/400% url(../images/Day30_whack-a-mole.jpg);
 }
 
 .day30-box > h1 {
   color: white;
-  font-size: 4.5rem;
+  /* font-size: 4.5rem; */
 }
 
 
@@ -339,3 +317,9 @@ main {
   }
 
 }
+
+/* @media (min-width: 1082px) {
+  .list-days__num {
+    font-size: 5px;
+  }
+} */
