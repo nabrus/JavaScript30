@@ -84,8 +84,13 @@ main {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
-  padding-left: 10px;
-  justify-items: center;
+  color: var(--yellow);
+  letter-spacing: 5px;
+}
+
+.sidebar-header h4 {
+  padding: 0 5px 0 5px;
+  margin: 10px 0 5px 0;
 }
 
 .sidebar-list {
@@ -296,7 +301,6 @@ main {
 .blank-day {
   background: var(--upperSky);
   border-left: solid #04010C 1px;
-  border-right: solid #04010C 1px;
 }
 
 @media (max-width: 1082px) {
