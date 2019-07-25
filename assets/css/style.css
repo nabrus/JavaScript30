@@ -63,7 +63,9 @@ main {
   "sidebar calendar";
 }
 
-
+.mobile-hero {
+  display: none;
+}
 
 /*
 #SIDEBAR
@@ -91,6 +93,13 @@ main {
 .sidebar-header h4 {
   padding: 0 5px 0 5px;
   margin: 10px 0 5px 0;
+}
+
+.sidebar-header__img {
+  display: none;
+  max-height: 100px;
+  widows: 500px;;
+  /* overflow: hidden; */
 }
 
 .sidebar-list {
@@ -306,6 +315,7 @@ main {
 @media (max-width: 1082px) {
   main {
     grid-template-areas:
+      "mobile-hero"
       "sidebar"
       "sidebar";
     grid-template-columns: 1fr;
@@ -317,6 +327,15 @@ main {
   }
 
   .list-days__img {
+    display: block;
+  }
+
+  .sidebar-header__img {
+    display: block;
+  }
+
+  .mobile-hero {
+    grid-area: mobile-hero;
     display: block;
   }
 
