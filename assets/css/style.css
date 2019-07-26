@@ -67,6 +67,7 @@ main {
   display: none;
 }
 
+
 /*
 #SIDEBAR
 ******************************************************************************/
@@ -123,7 +124,7 @@ main {
   height: 8rem;
   width: 8rem;
   border-radius: 100%;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 10px 20px;
 }
 
 .list-days__title {
@@ -322,27 +323,35 @@ main {
     padding: 0;
   }
 
-  .calendar {
-    display: none;
+  .mobile-hero {
+    grid-area: mobile-hero;
+    display: block;
+    background: var(--upperSky);
+  }
+  
+  .mobile-hero img {
+    border-radius: 80% 50%;
+  }
+  
+  .sidebar-header {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    font-size: 2rem;
+  }
+  
+  .sidebar-header__img {
+    display: block;
   }
 
   .list-days__img {
     display: block;
   }
-
-  .sidebar-header__img {
-    display: block;
-  }
-
-  .mobile-hero {
-    grid-area: mobile-hero;
-    display: block;
-  }
-
-}
-
-/* @media (min-width: 1082px) {
+  
   .list-days__num {
-    font-size: 5px;
+    font-size: 2.5rem;
   }
-} */
+  
+  .calendar {
+    display: none;
+  }
+}
