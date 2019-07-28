@@ -151,6 +151,14 @@ main {
   grid-row: auto;
 }
 
+.box {
+  transition: opacity .5s;
+}
+
+.box:hover {
+  opacity: 0.5;
+}
+
 .box h1 {
   text-align: right;
   margin: 0;
