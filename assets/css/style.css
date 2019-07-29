@@ -99,8 +99,7 @@ main {
 .sidebar-header__img {
   display: none;
   max-height: 100px;
-  widows: 500px;;
-  /* overflow: hidden; */
+  widows: 500px;
 }
 
 .sidebar-list {
@@ -143,7 +142,6 @@ main {
   grid-area: calendar;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  /* grid-template-rows: 1fr 45px repeat(5, 1fr);original 45px */
 }
 
 .calendar img {
@@ -167,9 +165,7 @@ main {
 }
 
 .day1-box {
-  /* border: solid red 2px; */
   background: no-repeat center/280% url(../images/Day1_JS_DrumKit.jpg);
-  /* opacity: 0.5; */
 }
 
 .day2-box {
@@ -290,7 +286,6 @@ main {
 
 .day30-box > h1 {
   color: white;
-  /* font-size: 4.5rem; */
 }
 
 
